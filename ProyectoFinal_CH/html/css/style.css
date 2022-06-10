@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../img/fondo_musical_arena.png);
+}
+.bodyDiscografia{
+    background-image: url(../img/fondo_musical_dark.png);
+}
+html{
+	font-size: 62.5%; /* 1rem= 10px */
+    font-family: 'Bebas Neue', cursive;
+}
+main{
+    font-family: 'Roboto', sans-serif;
+}
+/* Header */
+header{
+    width: 100%;
+    background-color: rgba(62, 12, 85, 0.904);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+a{
+    font-family: 'Bebas Neue', cursive;
+}
+
+    nav ul {
+        list-style: none;
+        display: inline;
+    }   
+        nav ul li {
+            display: inline;
+            position:relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-size: 3rem;
+            margin: 2rem;
+            box-sizing: content-box;
+            padding:2rem 1rem;
+        }
+
+        ul ul {
+            position: absolute;
+            display: none;
+         }
+   
+         ul ul li {
+             display: block;
+            }
+   
+         ul li:hover ul {
+               display:block;
+               background-color: rgba(37, 13, 48, 0.904);  
+            }
+
+.ImagenLogo{
+    width: 70%;
+    height: auto;
+}
+
+.ContenedorMenuBento{
+    align-self: center;
+}
+.menuBento{
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0 4rem;
+    align-self: center;
+}
+/* Fin de header */
+
+
+/* Seccion inicio */
+.TituloPrincipal{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.Inicio{
+    padding: 3%;
+}
+.InicioImagen{
+    width: 100%;
+}
+/* Fin de seccion inicio */
+
+/* boton de to top */
+.BtInicio{
+    display: inline;
+    position: sticky;
+    top: 50%;
+    margin: 2rem 0 0 2rem;
+}
+.TextoSaludo{
+    font-size: 2rem;
+}
+
+/* Seccion informacion */
+
+.SeccionInformacionTitulo , 
+.UltimomvTitulo , 
+.informacion__titulo{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Container {
+    position: relative;
+    margin: 0 25%;
+    align-items: center;
+    width: 50%;
+    max-width: 100%;
+  }
+
+  .ContainerImg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .ImgOverlay {
+    
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 93.5%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px ;
+    text-align: center;
+  }
+  
+  .Container:hover .ImgOverlay {
+    opacity: 1;
+  }
+
+.InformacionTexto{
+    font-size: 2rem;
+    margin: 2rem 5rem 0 5rem;
+    padding: 2rem;
+    
+}
+
+.ContenedorBt{
+    display: flex;
+    justify-content: center;
+}
+.bt{
+    text-decoration: none;
+    font-size: 2rem;
+    border: solid 0.1rem black;
+    margin: 1rem 10rem;
+    padding: 1rem;
+}
+/* Fin de seccion informacion */
+
+/* Seccion mv */
+.ContenedorVideo1{
+    display: flex;
+    justify-content: center;
+}
+
+.MvsTitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.MVtcolab , 
+.MVtsolitario{
+    font-size: 2rem;
+    margin: 5rem 10rem 0rem 10rem;
+    padding: 0 5rem;
+}
+
+.ContenedorMVs{
+    display: flex;
+    justify-content: center;
+}
+
+.mvideo2 ,.mvideo3{
+    margin: 1rem 4rem 4rem 4rem;
+}
+/* Fin de seccion mv */
+
+/* contacto */
+.ContenedorContacto{
+    border: solid 0.1rem black ;
+    margin: 4%;
+    padding: 2rem;
+
+}
+.TextoContacto{
+    font-size:2rem;
+    padding: 0 1rem;
+}
+.links .ContactoBt {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0;
+}
+/* Footer */
+.footer{
+    background-color: rgba(0, 0, 0, 0.904);
+    align-items: center;
+    padding: 0;
+}
+
+.footer a{
+    width: 100px;
+    height: 100px;
+}
+
+.footer__span{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+
+}
+/* Fin de footer */
+
+
+/* efecto de links */
+a:link {
+    color: grey;
+}
+
+a:visited {
+    /* color: rgb(146, 84, 187); */
+    color: rgb(209, 181, 228);
+}
+.links a {
+    background-color: rgb(77, 11, 77);
+    
+}
+.links a:hover , 
+.bt:hover , 
+.bt--center:hover{
+    background-color: rgba(90, 12, 105, 0.678);
+
+}
+a:hover ,
+.indiceDiscografia ul li a:hover ,
+.indiceColumna li a:hover{
+    /* color: rgb(171, 139, 185); */
+    color: rgb(177, 9, 177);
+    font-weight: 600;
+    border-color: rgb(160, 125, 175);
+    
+}
+
+a:active {
+    color: black;
+}
+/* fin de efecto de links */
+
+/* Seccion about bts */
+
+.informacion__tituloPrincipal{
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.seccion{
+    /* display: flex;  
+    flex-direction: row; 
+   justify-content: space-around; */
+   margin: 1rem 5rem;
+}
+
+.imagenSeccion{
+    float: left;
+    width: 30rem;
+    height: auto;
+    padding: 2rem;
+    box-sizing: content-box;
+}
+.seccion_parrafo{
+    font-size: 2rem;
+    padding: 2rem;
+}
+.indiceColumna li a{
+    color: #e8e3eb;
+    display: block;
+    box-sizing: content-box;
+    font-size: 2.5rem;
+    padding: 0 1rem ;
+    border: solid 0.1rem black;
+    border-radius: 10%;
+    background-color: rgba(90, 12, 105, 0.678);
+    margin: 1rem;
+}
+.indiceColumna li{
+    box-sizing: border-box;
+}
+.indiceColumna{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.indice_info ul{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+/* Fin de Seccion about bts */
+
+/* seccion de contacto */
+
+fieldset{
+    border: 0 ;
+    margin: 1rem 10%;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+fieldset legend {
+    text-align: center;
+    font-size: 3;
+    text-decoration: underline;
+}
+ fieldset label{
+     margin: 1rem 0 1rem 2rem;
+ }
+
+.Contactoparrafo{
+    font-size: 2rem;
+    padding: 1rem 10%; 
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    border: 0 ;
+    font-size: 2rem;
+    margin: 1rem 10%;
+    padding: 0;
+
+}
+.mensaje__titulo{
+    text-align: center;
+    margin-bottom: 1rem;
+ }
+ .BotonEnviar ,
+ .BotonCancelar{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border-radius: 3px;
+    margin: 0 6%;
+ }
+.contactoBt{
+    margin: 3rem;
+    text-align: center;
+}
+/* Fin de seccion de contacto */
+/* seccion shows */
+.imagenSeccionGrande{
+    float: left;
+    width: 20rem;
+    height: auto;
+    padding: 2rem;
+}
+/* Fin de seccion de shows */
+
+/* seccion proyectos */
+.links a{
+    text-decoration: none;
+    font-size: 2rem;
+    box-sizing: content-box;
+    border: solid 0.1rem black;
+    padding: 0.5rem 2rem;
+    margin: 2rem;
+    
+}
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+/* Fin de seccion proyectos */
+/* seccion discografia */
+.fila_albun{
+    display: flex;  
+    flex-direction: row; 
+   justify-content: space-around;
+   margin: 3rem 5rem;
+}
+
+.fila_albun a img ,
+.ContenedorCancines a img{
+    box-shadow: 0px 10px 10px black;
+    margin-bottom: 3rem;
+}
+
+.GifMenu{
+    display: flex;
+    justify-content: center;
+}
+
+.gif{
+    width: 80%;
+    padding: 5rem;
+}
+
+.ContenedorComboBox .indiceDiscografia{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(156, 153, 153, 0.5);
+}
+
+.ImgBoton{
+    width: 40px;
+    height: auto;
+}
+
+.ContenedorPlayBoton{
+    position: absolute;
+    right: 11%;
+    top:21%;
+}
+
+.ContenedorComboBox{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top:80%;
+}
+
+.ContenedorComboBox 
+.indiceDiscografia a{
+    color: white;
+    padding: 0.5rem;
+} 
+
+.sugaMixtapeTitulo , 
+.RMMixtapeTitulo ,
+.JhopeMixtapeTitulo{    
+    color: black  ;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    box-sizing: content-box;
+}  
+
+.tituloCover{
+    color: black  ;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    margin-left: 8%;
+    font-size: 2rem;
+    box-sizing: content-box;
+}
+
+.sugaMixtape , 
+.RMMixtape ,
+.JhopeMixtape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+figure figcaption{
+    font-size: 2rem;
+    text-align: center;
+}
+/* Fin de seccion discografia */
+
+

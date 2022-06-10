@@ -1,0 +1,37 @@
+Wireframe para index :
+	* Web:	  https://wireframe.cc/KqIcsy
+	* Mobile: https://wireframe.cc/0eg7mn  		
+
+Wireframe para seccion about_bts:
+	* Web:	  https://wireframe.cc/uubFHc
+	* Mobile: https://wireframe.cc/pLwzGW 		
+
+
+Wireframe para seccion discografia:
+	* Web:	  https://wireframe.cc/vRwIqO
+	* Mobile: https://wireframe.cc/k3hVuX		
+
+
+Wireframe para seccion about_army:
+	* Web:	  https://wireframe.cc/qkuVAN
+	* Mobile: https://wireframe.cc/3O5Ety	
+
+
+Wireframe para seccion logros:
+	* Web:	  https://wireframe.cc/XzDxzj
+	* Mobile: https://wireframe.cc/eA0Szq		
+
+
+Wireframe para seccion proyectos:
+	* Web:	  https://wireframe.cc/Xm9rcg
+	* Mobile: https://wireframe.cc/owRrUD 		
+
+
+Wireframe para seccion shows:
+	* Web:	  https://wireframe.cc/ylwlvX
+	* Mobile: https://wireframe.cc/GEf15p		
+
+
+Wireframe para seccion contact:
+	* Web:	  https://wireframe.cc/w6ugJx
+	* Mobile: https://wireframe.cc/NbPOUf	
