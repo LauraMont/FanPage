@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>HanaBell- Home page</title>
-    <link rel="shortcut icon" href="img/hanabell_icon.png"> <!--icono del sitio web-->
+    <title>HanaBell-Home page</title>
+    <link rel="shortcut icon" href="img/hanabell_icon.svg"> <!--icono del sitio web-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -36,7 +36,7 @@
         </nav>
         <!-- ends nav -->
         <a href="index.html" class="ContenedorLogo"> <!--logo en el menu-->
-            <img src="img/hanabell.png" alt="Logo de BangtanAmyFP" id="logo" class="ImagenLogo">
+            <img src="img/hanabell.svg" alt="Logo de BangtanAmyFP" id="logo" class="ImagenLogo">
         </a>
         <div class="ContenedorMenuBento">
         <!--menu bento-->
@@ -59,12 +59,14 @@
         </div>
         <span class="TextoSaludo">Somos una fan page sin fines de lucro esperamos que te guste!</span>
 
-        <article id="info_bts" class="informacion ">   <!--Seccion de informacion-->
+        <article id="info_bts" class="ArticuloOverlay ">   <!--Seccion de informacion-->
             <h2 class="SeccionInformacionTitulo">Un poco sobre BTS.</h2>
+            
             <div class="Container">
                 <img src="img/BTS-OK.jpg" alt="imagen en los Grammy 2022" class="ContainerImg" >
                 <div class="ImgOverlay">BTS Festa 2019</div>
             </div>
+
             <p class="InformacionTexto">
                 BTS es uno de los grupos más famosos a nivel mundial, ha logrado romper una gran cantidad de récords y ha desbancado a más de un artista estadunidense de las listas de popularidad, su música se escucha en todos lados, son los reyes de las redes sociales y se convirtieron en el primer grupo coreano en presentarse en la entrega de premios Grammy. 
                 <br>Bangtan Sonyeondan, el nombre coreano de la agrupación, se traduce literalmente como chicos a prueba de balas .V, Suga, J-Hope, Jungkook, Jin, Jimin y RM son los miembros que forman al grupo, debutaron oficialmente en 2012, pero su popularidad aumentó de forma inesperada hasta 2016.
@@ -72,32 +74,36 @@
                 <br>El éxito de BTS se debe principalmente a la forma a la en la que se comunican con sus fans , cuando comenzaron eran poco populares por lo que a diferencia de otros grupos, se les permitió hablar mediante redes sociales con sus seguidoras.  
                 <br>Otro factor importante es que se les dio la oportunidad de contribuir en la música que cantaban, convirtiéndola en algo que reflejaba sus propias inquietudes y a su vez esto resonaba en los sentimientos de quienes los escuchaban creando un vínculo difícil de romper.
             </p>
-            <div class="ContenedorBt links">
+            
+            <div class="ContenedorBts">
                 <a href="section/about_bts.html" class="bt">Mas sobre BTS</a>
                 <a href="section/discografia.html" class="bt" >Discografía</a>
             </div>
         </article>
+        
 
-        <section class="ContenedorUltimomv">
-            <h2 class="UltimomvTitulo">Ulitmo MV</h2>
-            <div class="ContenedorVideo1">
+        <section id="Mv"> <!--Aplicacion de Grid y flex en los div-->
+            <div id="ContenedorUltimoMv">
+                <h2 class="UltimoMvTitulo">Ulitmo MV</h2>
                 <!-- tamaño original: width="560" height="315" -->
-                <iframe width="600" height="337" src="https://www.youtube.com/embed/m1GSgn3v3Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mvideo_ultimomv--center"></iframe>
+                <iframe width="600" height="337" src="https://www.youtube.com/embed/m1GSgn3v3Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="UltimoMv"></iframe>
             </div>
-            <div class="MvsTitulo">
-                <h3 class="MVtcolab">Ultima colaboracion</h3>
-                <h3 class="MVtsolitario">Ultimo proyecto en solitario</h3>
+
+            <div id="ContenedorUltimaColab">
+                <h3 class="TituloUltimaColab">Ultima colaboracion</h3>
+                <iframe width="420" height="236" src="https://www.youtube.com/embed/TjieAw7BG4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="UltimaColab"></iframe>                
             </div>
             
-            <div class="ContenedorMVs">
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/TjieAw7BG4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mvideo2"></iframe>                
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/Z9b0Hj-BfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mvideo3"></iframe>
+            <div id="ContenedorSolitarioMv">
+                <h3 class="TituloSolitarioMv">Ultimo proyecto en solitario</h3>
+                <iframe width="420" height="236" src="https://www.youtube.com/embed/Z9b0Hj-BfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="SolitarioMv"></iframe>
             </div>
         </section>
+
         <div class="ContenedorContacto">
             <p class="TextoContacto">Si notas que la informacion es incorrecta ,hay algun link caido o quieres notificarnos algo no dudes en contactarnos!</p>
-            <div class="links">
-                <a href="section/contact.html" class="ContactoBt">Contacto</a>
+            <div class="ContenedorBt">
+                <a href="section/contact.html" class="bt">Contacto</a>
             </div>
         </div>
     </main>
