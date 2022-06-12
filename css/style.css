@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -23,8 +24,8 @@ header{
     width: 100%;
     background-color: rgba(62, 12, 85, 0.904);
     display: flex;
-    justify-content: space-between ;
-    align-items: center;
+    justify-content: center ;
+    flex-wrap: wrap;
 }
 
 a{
@@ -41,8 +42,8 @@ a{
         }
         nav ul li a {
             text-decoration: none;
-            font-size: 3rem;
-            margin: 2rem;
+            font-size: 2.5rem;
+            margin: 1rem;
             box-sizing: content-box;
             padding:2rem 1rem;
         }
@@ -60,34 +61,38 @@ a{
                display:block;
                background-color: rgba(37, 13, 48, 0.904);  
             }
-
+.ContenedorLogo{
+    width: 50%;
+}
 .ImagenLogo{
-    width: 70%;
+    width: 100%;
     height: auto;
 }
-
 .ContenedorMenuBento{
     align-self: center;
 }
 .menuBento{
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 0 4rem;
     align-self: center;
+}
+.menu_hamburguesa{
+    order: 1; /*Se ubico el menu debajo del logo*/
 }
 /* Fin de header */
 
 
 /* Seccion inicio */
 .TituloPrincipal{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
     padding-top: 2rem;
 }
 
 .Inicio{
-    padding: 3%;
+    padding: 0;
 }
 .InicioImagen{
     width: 100%;
@@ -99,135 +104,137 @@ a{
     display: inline;
     position: sticky;
     top: 50%;
-    margin: 2rem 0 0 2rem;
+    margin: 1rem 0 0 1rem;
 }
 .TextoSaludo{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Seccion informacion */
 
 .SeccionInformacionTitulo , 
-.UltimomvTitulo , 
-.informacion__titulo{
-    font-size: 3rem;
+.UltimoMvTitulo , 
+.TituloArticulo{
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.Container {
-    position: relative;
-    margin: 0 25%;
-    align-items: center;
-    width: 50%;
-    max-width: 100%;
-  }
+    .Container{
+        display: flex;
+        justify-content: center;
+    }
+        .ContainerImg {
+        width: 60vw;
+        height: auto;
+        }
+        
+        .ImgOverlay {
+            display: none;
+        }
 
-  .ContainerImg {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .ImgOverlay {
-    
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 93.5%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px ;
-    text-align: center;
-  }
-  
-  .Container:hover .ImgOverlay {
-    opacity: 1;
-  }
-
-.InformacionTexto{
-    font-size: 2rem;
-    margin: 2rem 5rem 0 5rem;
-    padding: 2rem;
-    
+.InformacionTexto , 
+.seccion_parrafo,
+p,
+strong{
+    font-size: 1.5rem;
+    padding: 2rem 0 ;
 }
 
-.ContenedorBt{
+.Articulo ,
+.ArticuloOverlay{
+    padding: 4% 8%;
+}
+
+.ContenedorBts{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.bt{
-    text-decoration: none;
-    font-size: 2rem;
-    border: solid 0.1rem black;
-    margin: 1rem 10rem;
-    padding: 1rem;
-}
+    .bt{
+        text-decoration: none;
+        font-size: 1.5rem;
+        border: solid 0.1rem black;
+        padding: 1rem;
+    }
 /* Fin de seccion informacion */
 
 /* Seccion mv */
-.ContenedorVideo1{
+#Mv{ /* Aplicacion de Grid y flex en los div */
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "UltimoMv" 
+    "UltimaColab"
+    "SolitarioMv";
+}
+
+#ContenedorUltimoMv{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding-bottom:5% ;
+    grid-area: UltimoMv;
 }
-
-.MvsTitulo {
+    .UltimoMv,
+    .UltimaColab,
+    .SolitarioMv{
+        width: 360px; /* 600x337 */
+        height: 202px;
+    }
+#ContenedorUltimaColab{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding-bottom:5% ;
+    grid-area: UltimaColab;
 }
-
-.MVtcolab , 
-.MVtsolitario{
-    font-size: 2rem;
-    margin: 5rem 10rem 0rem 10rem;
-    padding: 0 5rem;
-}
-
-.ContenedorMVs{
+#ContenedorSolitarioMv{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding-bottom:5% ;
+    grid-area: SolitarioMv;
 }
+    .TituloUltimaColab,
+    .TituloSolitarioMv{
+        font-size: 2rem;
+    }
 
-.mvideo2 ,.mvideo3{
-    margin: 1rem 4rem 4rem 4rem;
-}
 /* Fin de seccion mv */
 
 /* contacto */
 .ContenedorContacto{
-    border: solid 0.1rem black ;
-    margin: 4%;
-    padding: 2rem;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 8%;;
 }
-.TextoContacto{
-    font-size:2rem;
-    padding: 0 1rem;
-}
-.links .ContactoBt {
-    text-decoration: none;
-    font-size: 2rem;
-    margin: 0;
-}
+    .TextoContacto{
+        font-size:1.5rem;
+        padding-bottom: 1rem;
+    }
+    .ContenedorBt{
+        display: flex;
+        justify-content: center;
+    }
 /* Footer */
 .footer{
-    background-color: rgba(0, 0, 0, 0.904);
+    display: flex;
     align-items: center;
-    padding: 0;
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 0 3%;
 }
 
 .footer a{
-    width: 100px;
-    height: 100px;
+ padding: 0 1rem;
 }
 
 .footer__span{
-    display: inline-block;
     color: white;
     font-size: 2rem;
 
@@ -237,29 +244,19 @@ a{
 
 /* efecto de links */
 a:link {
-    color: grey;
+    color: rgb(124, 80, 106);
 }
 
 a:visited {
     /* color: rgb(146, 84, 187); */
     color: rgb(209, 181, 228);
 }
-.links a {
-    background-color: rgb(77, 11, 77);
-    
-}
-.links a:hover , 
-.bt:hover , 
-.bt--center:hover{
-    background-color: rgba(90, 12, 105, 0.678);
-
-}
 a:hover ,
 .indiceDiscografia ul li a:hover ,
-.indiceColumna li a:hover{
+.indiceColumna li a:hover,
+#inicio_about_bts a:hover{
     /* color: rgb(171, 139, 185); */
     color: rgb(177, 9, 177);
-    font-weight: 600;
     border-color: rgb(160, 125, 175);
     
 }
@@ -267,59 +264,77 @@ a:hover ,
 a:active {
     color: black;
 }
+
+.bt {
+    background-color: rgb(77, 11, 77);
+    
+} 
+.bt:hover{
+    background-color: rgba(90, 12, 105, 0.678);
+
+}
 /* fin de efecto de links */
 
 /* Seccion about bts */
-
-.informacion__tituloPrincipal{
-    margin-top: 3rem;
-    font-size: 3.5rem;
-    text-align: center;
-}
-
-.seccion{
-    /* display: flex;  
-    flex-direction: row; 
-   justify-content: space-around; */
-   margin: 1rem 5rem;
-}
-
 .imagenSeccion{
-    float: left;
-    width: 30rem;
-    height: auto;
-    padding: 2rem;
-    box-sizing: content-box;
+    width: 40vw;
+    float:left;
+    padding: 2%;
 }
-.seccion_parrafo{
-    font-size: 2rem;
-    padding: 2rem;
-}
-.indiceColumna li a{
+
+.indice_info li a{
+    margin: 0;
     color: #e8e3eb;
-    display: block;
     box-sizing: content-box;
     font-size: 2.5rem;
-    padding: 0 1rem ;
-    border: solid 0.1rem black;
-    border-radius: 10%;
+}
+.indice_info li{
     background-color: rgba(90, 12, 105, 0.678);
-    margin: 1rem;
+    padding: 0 1rem ;
+    text-align: center;
 }
-.indiceColumna li{
-    box-sizing: border-box;
+#inicio_about_bts{
+    margin: 5% 0;
 }
-.indiceColumna{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-.indice_info ul{
-    display: flex;
-    justify-content: center;
-    margin: 3rem;
-}
-
+    #inicio_about_bts ul{
+        padding: 3% 10%;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(8 ,auto);
+        grid-template-areas: 
+        "intro prog"
+        "bh btsarmy"
+        "albun colab"
+        "mix single";
+        grid-column-gap: 2vw;
+        grid-row-gap: 1vh;
+        align-items: center;
+    }
+    #intro{
+        grid-area: intro;
+    }
+    #albun{
+        grid-area: albun;
+    }
+    #prog{
+        grid-area: prog;
+    }
+    #colab{
+        grid-area: colab;
+    }
+    #bh{
+        grid-area: bh;
+    }
+    #mix{
+        grid-area: mix;
+    }
+    #btsarmy{
+        grid-area: btsarmy;
+    }
+    #single{
+        grid-area: single;
+    }
 /* Fin de Seccion about bts */
 
 /* seccion de contacto */
@@ -380,22 +395,7 @@ fieldset legend {
 /* Fin de seccion de shows */
 
 /* seccion proyectos */
-.links a{
-    text-decoration: none;
-    font-size: 2rem;
-    box-sizing: content-box;
-    border: solid 0.1rem black;
-    padding: 0.5rem 2rem;
-    margin: 2rem;
-    
-}
-.links{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
+
 /* Fin de seccion proyectos */
 /* seccion discografia */
 .fila_albun{
@@ -486,4 +486,198 @@ figure figcaption{
 }
 /* Fin de seccion discografia */
 
+@media (min-width: 760px)
+{
+    header{
+        justify-content: space-between ;
+        align-items: center;
+    }
 
+    nav ul li a {
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    
+    .ContenedorLogo{
+        width: 25%
+    }
+    .ImagenLogo{
+        width: 90%;
+        height: auto;
+    }
+        
+    .menuBento{
+        font-size: 3rem;
+    }
+    .menu_hamburguesa{
+        order: 0;
+    }
+    /* Fin de header */
+    
+    /* Seccion inicio */
+    .TituloPrincipal{
+        font-size: 4rem;
+    }
+    
+    .Inicio{
+        padding: 3%;
+    }
+    /* Fin de seccion inicio */
+    
+    /* boton de to top */
+    .BtInicio{
+        margin: 2rem 0 0 2rem;
+    }
+    .TextoSaludo{
+        font-size: 2rem;
+    }
+    
+    /* Seccion informacion */
+    
+    .SeccionInformacionTitulo , 
+    .UltimoMvTitulo , 
+    .TituloArticulo{
+        font-size: 3rem;
+    }
+    
+    .Container {
+        position: relative;
+        margin: 0 25%;
+        align-items: center;
+        width: 50%;
+        max-width: 100%;
+    }
+        .ContainerImg {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        .ImgOverlay {
+        display: block;
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px ;
+        text-align: center;
+        }
+        .Container:hover 
+        .ImgOverlay {
+        opacity: 1;
+        }
+    
+    .InformacionTexto , 
+    .seccion_parrafo,
+    p,
+    strong{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .bt{
+        font-size: 2rem;
+    }
+    /* Fin de seccion informacion */
+    
+    /* Seccion mv */
+    #Mv{ /* Aplicacion de Grid y flex en los div */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "UltimoMv UltimoMv" 
+        "UltimaColab SolitarioMv";
+    }
+
+    #ContenedorUltimoMv{
+        padding-bottom:3% ;
+    }
+        .UltimoMv{
+            width: 600px; /* 600x337 */
+            height: 337px;
+        }
+        .UltimaColab,
+        .SolitarioMv{
+            width: 420px; /* 600x337 */
+            height: 236px;
+        }
+    #ContenedorUltimaColab{
+        padding-bottom:3% ;
+    }
+    #ContenedorSolitarioMv
+    {
+        padding-bottom:3% ;
+    }
+        .TituloUltimaColab,
+        .TituloSolitarioMv{
+            font-size: 2.5rem;
+        }
+    
+    /* Fin de seccion mv */
+    
+    /* contacto */
+    .ContenedorContacto{
+        border: solid 0.1rem black ;
+        margin: 3%;
+        padding: 2rem;
+    }
+        .TextoContacto{
+            font-size:2rem;
+            padding-bottom: 2rem;
+        }
+    
+    /* efecto de links */
+    a:link {
+        color: rgb(124, 80, 106);
+    }
+    
+    a:visited {
+        /* color: rgb(146, 84, 187); */
+        color: rgb(209, 181, 228);
+    }
+    a:hover ,
+    .indiceDiscografia ul li a:hover ,
+    .indiceColumna li a:hover,
+    #inicio_about_bts a:hover{
+        /* color: rgb(171, 139, 185); */
+        color: rgb(177, 9, 177);
+        border-color: rgb(160, 125, 175);
+        
+    }
+    
+    a:active {
+        color: black;
+    }
+    
+    .bt {
+        background-color: rgb(77, 11, 77);
+        
+    } 
+    .bt:hover{
+        background-color: rgba(90, 12, 105, 0.678);
+    
+    }
+    /* fin de efecto de links */
+    
+    /* Seccion about bts */
+    .imagenSeccion{
+        width: 20vw;
+    }
+ 
+    #inicio_about_bts ul{
+        padding: 3% 14%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "intro prog bh btsarmy"
+        "albun colab mix single";
+        grid-column-gap: 1%;
+        grid-row-gap: 5%;
+    }
+    /* Fin de Seccion about bts */
+}
