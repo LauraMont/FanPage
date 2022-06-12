@@ -24,8 +24,8 @@ header{
     width: 100%;
     background-color: rgba(62, 12, 85, 0.904);
     display: flex;
-    justify-content: space-between ;
-    align-items: center;
+    justify-content: center ;
+    flex-wrap: wrap;
 }
 
 a{
@@ -42,8 +42,8 @@ a{
         }
         nav ul li a {
             text-decoration: none;
-            font-size: 3rem;
-            margin: 2rem;
+            font-size: 2.5rem;
+            margin: 1rem;
             box-sizing: content-box;
             padding:2rem 1rem;
         }
@@ -61,34 +61,38 @@ a{
                display:block;
                background-color: rgba(37, 13, 48, 0.904);  
             }
-
+.ContenedorLogo{
+    width: 50%;
+}
 .ImagenLogo{
-    width: 70%;
+    width: 100%;
     height: auto;
 }
-
 .ContenedorMenuBento{
     align-self: center;
 }
 .menuBento{
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 0 4rem;
     align-self: center;
+}
+.menu_hamburguesa{
+    order: 1; /*Se ubico el menu debajo del logo*/
 }
 /* Fin de header */
 
 
 /* Seccion inicio */
 .TituloPrincipal{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
     padding-top: 2rem;
 }
 
 .Inicio{
-    padding: 3%;
+    padding: 0;
 }
 .InicioImagen{
     width: 100%;
@@ -100,10 +104,10 @@ a{
     display: inline;
     position: sticky;
     top: 50%;
-    margin: 2rem 0 0 2rem;
+    margin: 1rem 0 0 1rem;
 }
 .TextoSaludo{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Seccion informacion */
@@ -114,12 +118,17 @@ p{
 .SeccionInformacionTitulo , 
 .UltimoMvTitulo , 
 .TituloArticulo{
+<<<<<<< HEAD
     font-size: 3rem;
+=======
+    font-size: 2.5rem;
+>>>>>>> Responsive
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .Container {
     position: relative;
     margin: 0 25%;
@@ -150,13 +159,32 @@ p{
     .ImgOverlay {
     opacity: 1;
     }
+=======
+    .Container{
+        display: flex;
+        justify-content: center;
+    }
+        .ContainerImg {
+        width: 60vw;
+        height: auto;
+        }
+        
+        .ImgOverlay {
+            display: none;
+        }
+>>>>>>> Responsive
 
 .InformacionTexto , 
 .seccion_parrafo,
 p,
 strong{
+<<<<<<< HEAD
     font-size: 2rem;
     padding: 2rem;
+=======
+    font-size: 1.5rem;
+    padding: 2rem 0 ;
+>>>>>>> Responsive
 }
 
 .Articulo ,
@@ -170,7 +198,11 @@ strong{
 }
     .bt{
         text-decoration: none;
+<<<<<<< HEAD
         font-size: 2rem;
+=======
+        font-size: 1.5rem;
+>>>>>>> Responsive
         border: solid 0.1rem black;
         padding: 1rem;
     }
@@ -179,11 +211,20 @@ strong{
 /* Seccion mv */
 #Mv{ /* Aplicacion de Grid y flex en los div */
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
     "UltimoMv UltimoMv" 
     "UltimaColab SolitarioMv";
+=======
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "UltimoMv" 
+    "UltimaColab"
+    "SolitarioMv";
+>>>>>>> Responsive
 }
 
 #ContenedorUltimoMv{
@@ -191,29 +232,56 @@ strong{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     padding-bottom:3% ;
     grid-area: UltimoMv;
 }
+=======
+    padding-bottom:5% ;
+    grid-area: UltimoMv;
+}
+    .UltimoMv,
+    .UltimaColab,
+    .SolitarioMv{
+        width: 360px; /* 600x337 */
+        height: 202px;
+    }
+>>>>>>> Responsive
 #ContenedorUltimaColab{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     padding-bottom:3% ;
     grid-area: UltimaColab;
 }
 #ContenedorSolitarioMv
 {
+=======
+    padding-bottom:5% ;
+    grid-area: UltimaColab;
+}
+#ContenedorSolitarioMv{
+>>>>>>> Responsive
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     padding-bottom:3% ;
+=======
+    padding-bottom:5% ;
+>>>>>>> Responsive
     grid-area: SolitarioMv;
 }
     .TituloUltimaColab,
     .TituloSolitarioMv{
+<<<<<<< HEAD
         font-size: 2.5rem;
+=======
+        font-size: 2rem;
+>>>>>>> Responsive
     }
 
 /* Fin de seccion mv */
@@ -223,6 +291,7 @@ strong{
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     border: solid 0.1rem black ;
     margin: 3%;
     padding: 2rem;
@@ -230,6 +299,13 @@ strong{
     .TextoContacto{
         font-size:2rem;
         padding-bottom: 2rem;
+=======
+    padding: 4% 8%;;
+}
+    .TextoContacto{
+        font-size:1.5rem;
+        padding-bottom: 1rem;
+>>>>>>> Responsive
     }
     .ContenedorBt{
         display: flex;
@@ -241,7 +317,10 @@ strong{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.904);
     padding: 0 3%;
+<<<<<<< HEAD
     margin: 0;
+=======
+>>>>>>> Responsive
 }
 
 .footer a{
@@ -291,7 +370,11 @@ a:active {
 
 /* Seccion about bts */
 .imagenSeccion{
+<<<<<<< HEAD
     width: 20vw;
+=======
+    width: 40vw;
+>>>>>>> Responsive
     float:left;
     padding: 2%;
 }
@@ -307,6 +390,7 @@ a:active {
     padding: 0 1rem ;
     text-align: center;
 }
+<<<<<<< HEAD
 #inicio_about_bts ul{
     padding: 3% 14%;
     padding-bottom: 0;
@@ -343,6 +427,50 @@ a:active {
 #single{
     grid-area: single;
 }
+=======
+#inicio_about_bts{
+    margin: 5% 0;
+}
+    #inicio_about_bts ul{
+        padding: 3% 10%;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(8 ,auto);
+        grid-template-areas: 
+        "intro prog"
+        "bh btsarmy"
+        "albun colab"
+        "mix single";
+        grid-column-gap: 2vw;
+        grid-row-gap: 1vh;
+        align-items: center;
+    }
+    #intro{
+        grid-area: intro;
+    }
+    #albun{
+        grid-area: albun;
+    }
+    #prog{
+        grid-area: prog;
+    }
+    #colab{
+        grid-area: colab;
+    }
+    #bh{
+        grid-area: bh;
+    }
+    #mix{
+        grid-area: mix;
+    }
+    #btsarmy{
+        grid-area: btsarmy;
+    }
+    #single{
+        grid-area: single;
+    }
+>>>>>>> Responsive
 /* Fin de Seccion about bts */
 
 /* seccion de contacto */
@@ -494,4 +622,198 @@ figure figcaption{
 }
 /* Fin de seccion discografia */
 
+@media (min-width: 760px)
+{
+    header{
+        justify-content: space-between ;
+        align-items: center;
+    }
 
+    nav ul li a {
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    
+    .ContenedorLogo{
+        width: 25%
+    }
+    .ImagenLogo{
+        width: 90%;
+        height: auto;
+    }
+        
+    .menuBento{
+        font-size: 3rem;
+    }
+    .menu_hamburguesa{
+        order: 0;
+    }
+    /* Fin de header */
+    
+    /* Seccion inicio */
+    .TituloPrincipal{
+        font-size: 4rem;
+    }
+    
+    .Inicio{
+        padding: 3%;
+    }
+    /* Fin de seccion inicio */
+    
+    /* boton de to top */
+    .BtInicio{
+        margin: 2rem 0 0 2rem;
+    }
+    .TextoSaludo{
+        font-size: 2rem;
+    }
+    
+    /* Seccion informacion */
+    
+    .SeccionInformacionTitulo , 
+    .UltimoMvTitulo , 
+    .TituloArticulo{
+        font-size: 3rem;
+    }
+    
+    .Container {
+        position: relative;
+        margin: 0 25%;
+        align-items: center;
+        width: 50%;
+        max-width: 100%;
+    }
+        .ContainerImg {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        .ImgOverlay {
+        display: block;
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px ;
+        text-align: center;
+        }
+        .Container:hover 
+        .ImgOverlay {
+        opacity: 1;
+        }
+    
+    .InformacionTexto , 
+    .seccion_parrafo,
+    p,
+    strong{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .bt{
+        font-size: 2rem;
+    }
+    /* Fin de seccion informacion */
+    
+    /* Seccion mv */
+    #Mv{ /* Aplicacion de Grid y flex en los div */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "UltimoMv UltimoMv" 
+        "UltimaColab SolitarioMv";
+    }
+
+    #ContenedorUltimoMv{
+        padding-bottom:3% ;
+    }
+        .UltimoMv{
+            width: 600px; /* 600x337 */
+            height: 337px;
+        }
+        .UltimaColab,
+        .SolitarioMv{
+            width: 420px; /* 600x337 */
+            height: 236px;
+        }
+    #ContenedorUltimaColab{
+        padding-bottom:3% ;
+    }
+    #ContenedorSolitarioMv
+    {
+        padding-bottom:3% ;
+    }
+        .TituloUltimaColab,
+        .TituloSolitarioMv{
+            font-size: 2.5rem;
+        }
+    
+    /* Fin de seccion mv */
+    
+    /* contacto */
+    .ContenedorContacto{
+        border: solid 0.1rem black ;
+        margin: 3%;
+        padding: 2rem;
+    }
+        .TextoContacto{
+            font-size:2rem;
+            padding-bottom: 2rem;
+        }
+    
+    /* efecto de links */
+    a:link {
+        color: rgb(124, 80, 106);
+    }
+    
+    a:visited {
+        /* color: rgb(146, 84, 187); */
+        color: rgb(209, 181, 228);
+    }
+    a:hover ,
+    .indiceDiscografia ul li a:hover ,
+    .indiceColumna li a:hover,
+    #inicio_about_bts a:hover{
+        /* color: rgb(171, 139, 185); */
+        color: rgb(177, 9, 177);
+        border-color: rgb(160, 125, 175);
+        
+    }
+    
+    a:active {
+        color: black;
+    }
+    
+    .bt {
+        background-color: rgb(77, 11, 77);
+        
+    } 
+    .bt:hover{
+        background-color: rgba(90, 12, 105, 0.678);
+    
+    }
+    /* fin de efecto de links */
+    
+    /* Seccion about bts */
+    .imagenSeccion{
+        width: 20vw;
+    }
+ 
+    #inicio_about_bts ul{
+        padding: 3% 14%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "intro prog bh btsarmy"
+        "albun colab mix single";
+        grid-column-gap: 1%;
+        grid-row-gap: 5%;
+    }
+    /* Fin de Seccion about bts */
+}
