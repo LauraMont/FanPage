@@ -139,6 +139,20 @@ footer{
     }
 }
 /* Inicio de media lg(bs)*/
+/* discografia - portadas */
+
+/* The slow way */
+.make-it-slow {
+    border: 1px rgb(173, 173, 173) solid;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Transition to a bigger shadow on hover */
+  .make-it-slow:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555);
+  }
+
 @media (min-width: 992px){
     .ArticuloOverlay{
     width: 100vw;
