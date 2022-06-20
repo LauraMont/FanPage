@@ -8,125 +8,183 @@
     <title>HanaBell-Home page</title>
     <link rel="shortcut icon" href="img/hanabell_icon.svg"> <!--icono del sitio web-->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <!-- inicia nav -->
-        <nav class="menu_hamburguesa"> <!--menu hamburguesa-->
-            <ul>
-                <li>
-                    <a href="section/about_bts.html">BTS</a> <!--otro menu-->
-                    <ul>
-                        <li><a href="section/about_bts.html">Información</a></li>
-                        <li><a href="section/shows.html">Programas</a></li>
-                        <li><a href="section/logros.html">Logros</a></li>
-                        <li><a href="section/proyectos.html">Proyectos</a></li>
-                    </ul>
+        <!-- Comienza nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-violet-nav ">
+          <div class="container ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+              <ul class=" navbar-nav d-flex justify-content-evenly">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="section/discografia.html">Discografía</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="section/about_army.html">Army</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="section/contact.html">Contacto</a>
+              </li>
+                <li class="nav-item dropdown  ">
+                  <a class="nav-link dropdown-toggle text-light" href="section/about_bts.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      BTS
+                  </a>
+                  <ul class="dropdown-menu " id="bg-violet-nav-li" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item "   href="section/about_bts.html">Informacion</a></li>
+                    <li><a class="dropdown-item" href="section/shows.html">Programas</a></li>
+                    <li><a class="dropdown-item" href="section/logros.html">Logros</a></li>
+                    <li><a class="dropdown-item" href="section/proyectos.html">Proyectos</a></li>
+                  </ul>
                 </li>
-                <li>
-                    <a href="section/discografia.html">Discografía</a>
-                </li>
-                <li>
-                    <a href="section/about_army.html">Army</a>
-                </li>
-                <li>
-                    <a href="section/contact.html">Contacto</a>
-                </li>
-            </ul>   
-        </nav>
-        <!-- ends nav -->
-        <a href="index.html" class="ContenedorLogo"> <!--logo en el menu-->
-            <img src="img/hanabell.svg" alt="Logo " id="logo" class="ImagenLogo">
-        </a>
-        <div class="ContenedorMenuBento">
-        <!--menu bento-->
-        <a href="section/discografia.html" class="menuBento">Discografía</a>
-        </div>
-        
-    </header>
-    <!-- inicia conteniedo principal -->
-    <main class="main">
-        <h1 class="TituloPrincipal" id="Inicio" >Bienvenido a HanaBell! </h1>
-
-        <section class="Inicio " > <!--Seccion de inicial-->
-            <img src="img/proof.jpg" alt="imagen del nuevo album proof" class="InicioImagen">
-            <!--Insertar carrousel-->
-        </section>
-        <div class="BtInicio ">
-                <a href="#Inicio">
-                    <img src="img/to_top.png" alt="ir al comienzo">
+              </ul>
+            </div>
+              <a  class=".navbar-brand"  href="index.html">
+                <img src="img/hanabell.png" id="logo" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 </a>
+                <a class="nav-link active text-light" aria-current="page" href="section/discografia.html"> Discografía </a>
+          </div>
+        </nav>
+    </header>
+    <!-- Termina nav -->
+    <main>
+        <h1 class="TituloPrincipal text-bebas" id="Inicio" >BIENVENIDO A HANABELL! </h1>
+        <!-- Comienza carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/proof.jpg" class="d-block w-100" alt="Proof Albun">
+
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/BTSProofLive.jpg" class="d-block w-100" alt="...">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/BTS White House.psd.png" class="d-block w-100" alt="...">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- Fin carousel -->
+        <!-- Comienza boton Totop -->
+        <div class="BtInicio ">
+          <a href="#Inicio">
+              <img src="img/to_top.png" alt="ir al comienzo">
+          </a>
         </div>
-        <span class="TextoSaludo">Somos una fan page sin fines de lucro esperamos que te guste!</span>
-
-        <article id="info_bts" class="ArticuloOverlay ">   <!--Seccion de informacion-->
-            <h2 class="SeccionInformacionTitulo">Un poco sobre BTS.</h2>
-            
-            <div class="Container">
-                <img src="img/BTS-OK.jpg" alt="imagen en los Grammy 2022" class="ContainerImg" >
-                <div class="ImgOverlay">BTS Festa 2019</div>
-            </div>
-
-            <p class="InformacionTexto">
-                BTS es uno de los grupos más famosos a nivel mundial, ha logrado romper una gran cantidad de récords y ha desbancado a más de un artista estadunidense de las listas de popularidad, su música se escucha en todos lados, son los reyes de las redes sociales y se convirtieron en el primer grupo coreano en presentarse en la entrega de premios Grammy. 
-                <br>Bangtan Sonyeondan, el nombre coreano de la agrupación, se traduce literalmente como chicos a prueba de balas .V, Suga, J-Hope, Jungkook, Jin, Jimin y RM son los miembros que forman al grupo, debutaron oficialmente en 2012, pero su popularidad aumentó de forma inesperada hasta 2016.
-                <br> BTS es en apariencia un grupo muy parecido a los cientos de grupos coreanos que existen, muchos chicos bailando en sincronía, entrenados por años para debutar, no eran parte de una de las grandes agencias de entretenimiento de corea, y definitivamente no muchos se imaginaban que se convertirían en un fenómeno mundial.
-                <br>El éxito de BTS se debe principalmente a la forma a la en la que se comunican con sus fans , cuando comenzaron eran poco populares por lo que a diferencia de otros grupos, se les permitió hablar mediante redes sociales con sus seguidoras.  
-                <br>Otro factor importante es que se les dio la oportunidad de contribuir en la música que cantaban, convirtiéndola en algo que reflejaba sus propias inquietudes y a su vez esto resonaba en los sentimientos de quienes los escuchaban creando un vínculo difícil de romper.
-            </p>
-            
-            <div class="ContenedorBts">
-                <a href="section/about_bts.html" class="bt">Mas sobre BTS</a>
-                <a href="section/discografia.html" class="bt" >Discografía</a>
-            </div>
-        </article>
-        
-
-        <section id="Mv"> <!--Aplicacion de Grid y flex en los div-->
-            <div id="ContenedorUltimoMv">
-                <h2 class="UltimoMvTitulo">Ulitmo MV</h2>
-                <!-- tamaño original: width="560" height="315" -->
-                <iframe width="600" height="337" src="https://www.youtube.com/embed/m1GSgn3v3Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="UltimoMv"></iframe>
-            </div>
-
-            <div id="ContenedorUltimaColab">
-                <h3 class="TituloUltimaColab">Ultima colaboracion</h3>
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/TjieAw7BG4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="UltimaColab"></iframe>                
-            </div>
-            
-            <div id="ContenedorSolitarioMv">
-                <h3 class="TituloSolitarioMv">Ultimo proyecto en solitario</h3>
-                <iframe width="420" height="236" src="https://www.youtube.com/embed/Z9b0Hj-BfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="SolitarioMv"></iframe>
-            </div>
-        </section>
-
-        <div class="ContenedorContacto">
-            <p class="TextoContacto">Si notas que la informacion es incorrecta ,hay algun link caido o quieres notificarnos algo no dudes en contactarnos!</p>
-            <div class="ContenedorBt">
-                <a href="section/contact.html" class="bt">Contacto</a>
-            </div>
+        <!-- Fin boton Totop -->
+        <span class="fs-5 p-5 ">Somos una fan page sin fines de lucro esperamos que te guste!</span>
+        <!-- Comienzo InfoBts -->
+        <article id="info_bts" class="ArticuloOverlay pt-5 d-flex flex-column justify-content-center ">   <!--Seccion de informacion-->
+          <h2 class="SeccionInformacionTitulo text-center">Un poco sobre BTS.</h2>
+          
+          <div class="Container ">
+              <img src=" img/btsFesta2022.webp" alt="imagen en los Grammy 2022" class="ContainerImg" >
+              <div class="ImgOverlay">BTS Festa 2022</div>
+          </div>
+          <div class="px-5 pt-4 mx-5-lg">
+            <p class="fs-6  lh-p">
+              BTS es uno de los grupos más famosos a nivel mundial, ha logrado romper una gran cantidad de récords y ha desbancado a más de un artista estadunidense de las listas de popularidad, su música se escucha en todos lados, son los reyes de las redes sociales y se convirtieron en el primer grupo coreano en presentarse en la entrega de premios Grammy. 
+              <br>Bangtan Sonyeondan, el nombre coreano de la agrupación, se traduce literalmente como chicos a prueba de balas .V, Suga, J-Hope, Jungkook, Jin, Jimin y RM son los miembros que forman al grupo, debutaron oficialmente en 2012, pero su popularidad aumentó de forma inesperada hasta 2016.
+              <br> BTS es en apariencia un grupo muy parecido a los cientos de grupos coreanos que existen, muchos chicos bailando en sincronía, entrenados por años para debutar, no eran parte de una de las grandes agencias de entretenimiento de corea, y definitivamente no muchos se imaginaban que se convertirían en un fenómeno mundial.
+              <br>El éxito de BTS se debe principalmente a la forma a la en la que se comunican con sus fans , cuando comenzaron eran poco populares por lo que a diferencia de otros grupos, se les permitió hablar mediante redes sociales con sus seguidoras.  
+              <br>Otro factor importante es que se les dio la oportunidad de contribuir en la música que cantaban, convirtiéndola en algo que reflejaba sus propias inquietudes y a su vez esto resonaba en los sentimientos de quienes los escuchaban creando un vínculo difícil de romper.
+          </p>
+          </div>
+          
+      </article>
+        <!-- Fin InfoBts -->
+        <!-- Comienzo Buttons InfoBts -->
+        <div class="ContenedorBts">
+          <button type="button" id="bt1" class="bt btn btn-outline-dark ">Mas sobre BTS</button>  
+          <button type="button" id="bt2" class="btn btn-outline-dark ">Discografía</button>  
         </div>
+        <!-- Fin Buttons InfoBts -->
+        <!-- Comienzo Mv -->
+        <section id="Mv" class="row"> <!--Aplicacion de Grid y flex en los div-->
+          <div id="ContenedorUltimoMv" class="col-12 d-flex flex-column align-items-center pt-5">
+              <h2 class="UltimoMvTitulo">Ulitmo MV</h2>
+              <!-- tamaño original: width="560" height="315" -->
+              <iframe width="600" height="337" src="https://www.youtube.com/embed/m1GSgn3v3Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="UltimoMv"></iframe>
+          </div>
+
+          <div id="ContenedorUltimaColab" class="col-lg-6 col-12 d-flex flex-column align-items-center pt-5">
+              <h3 class="TituloUltimaColab">Ultima colaboracion</h3>
+              <iframe width="420" height="236" src="https://www.youtube.com/embed/TjieAw7BG4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="UltimaColab"></iframe>                
+          </div>
+          
+          <div id="ContenedorSolitarioMv" class="col-lg-6 col-12 d-flex flex-column align-items-center pt-5">
+              <h3 class="TituloSolitarioMv">Ultimo proyecto en solitario</h3>
+              <iframe width="420" height="236" src="https://www.youtube.com/embed/Z9b0Hj-BfaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="SolitarioMv"></iframe>
+          </div>
+      </section>
+        <!-- Fin Mv -->
+        <!--Comienzo Contacto -->
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center py-5">
+          <h3>Contactanos</h5>
+          <p class="fs-6">Si notas que la informacion es incorrecta ,hay algun link caido o quieres notificarnos algo no dudes en contactarnos!</p>
+          <button type="button"  id="bt3" class="btn btn-outline-dark">Contacto</button>  
+        </div>
+        <!--Fin Contacto -->
     </main>
-    <!-- cierra main-->
+    <!-- Comienza Footer -->
     <footer class="footer">
-        <span class="footer__span">Redes sociales de BTS:</span>
-        
-        <!--Insertar twiter-->
-        <a href="https://twitter.com/bts_twt" target="_blank" >
-			<img src="img/twiter.png" alt="seguinos en twiter">
-		</a>
-        <!--Insertar weverse-->
-        <a href="https://www.weverse.io/" target="_blank" >
-			<img src="img/weverse.png" alt="seguinos en weverse" >
-		</a>
-        <!--Insertar facebook-->
-        <a href="https://www.facebook.com/bangtan.official" target="_blank" >
-			<img src="img/facebook_2.png" alt="seguinos en facebook" >
-		</a>
-        <!--Insertar instagram-->
-        <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank">
-			<img src="img/instagram.png" alt="seguinos en instagram" >
-		</a>
-    </footer>
+      <span class="footer__span text-light">Redes sociales de BTS:</span>
+      
+      <!--Insertar twiter-->
+      <a href="https://twitter.com/bts_twt" target="_blank" >
+        <img src="img/twiter.png" alt="seguinos en twiter">
+      </a>
+      <!--Insertar weverse-->
+      <a href="https://www.weverse.io/" target="_blank" >
+        <img src="img/weverse.png" alt="seguinos en weverse" >
+      </a>
+      <!--Insertar facebook-->
+      <a href="https://www.facebook.com/bangtan.official" target="_blank" >
+        <img src="img/facebook_2.png" alt="seguinos en facebook" >
+      </a>
+      <!--Insertar instagram-->
+      <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank">
+        <img src="img/instagram.png" alt="seguinos en instagram" >
+      </a>
+  </footer>
+<!-- Fin Footer -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

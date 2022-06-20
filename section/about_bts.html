@@ -7,40 +7,53 @@
     <title>SobreBTS</title>
     <link rel="shortcut icon" href="../img/hanabell_icon.png"> <!--icono del sitio web-->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <!-- inicia nav -->
-        <nav class="menu_hamburguesa"> <!--menu hamburguesa-->
-            <ul>
-                <li>
-                    <a href="about_bts.html">BTS</a> <!--otro menu-->
-                    <ul>
-                        <li><a href="about_bts.html">Información</a></li>
-                        <li><a href="shows.html">Programas</a></li>
-                        <li><a href="logros.html">Logros</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
+        <!-- Comienza nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-violet-nav ">
+            <div class="container ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class=" collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class=" navbar-nav d-flex justify-content-evenly">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="discografia.html">Discografía</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="about_army.html">Army</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="contact.html">Contacto</a>
+                </li>
+                  <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle text-light" href="about_bts.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BTS
+                    </a>
+                    <ul class="dropdown-menu " id="bg-violet-nav-li" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item "   href="about_bts.html">Informacion</a></li>
+                      <li><a class="dropdown-item" href="shows.html">Programas</a></li>
+                      <li><a class="dropdown-item" href="logros.html">Logros</a></li>
+                      <li><a class="dropdown-item" href="proyectos.html">Proyectos</a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="discografia.html">Discografía</a>
-                </li>
-                <li>
-                    <a href="about_army.html">Army</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contacto</a>
-                </li>
-            </ul>       
-        </nav>
-        <!-- ends nav -->
-        <a href="../index.html" class="ContenedorLogo"> <!--logo en el menu-->
-            <img src="../img/hanabell.png" alt="Logo de BangtanAmyFP" id="logo" class="ImagenLogo">
-        </a>
-        <div class="ContenedorMenuBento">
-        <!--menu bento-->
-        <a href="discografia.html" class="menuBento">Discografía</a>
-        </div>   
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a  class="nav-link active"  href="../index.html">
+                  <img src="../img/hanabell.png" id="logo" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  </a>
+              </div>
+                <div >
+                  <a class="nav-link active text-light" aria-current="page" href="discografia.html"> Discografía </a>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <!-- Termina nav -->
     </header>
     <main>
         <nav id="inicio_about_bts" class="indice_info"> <!--Indice de Informacion-->
@@ -367,5 +380,7 @@
 			<img src="../img/instagram.png" alt="seguinos en instagram" >
 		</a>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

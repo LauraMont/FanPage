@@ -1,521 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body{
-    background-image: url(../img/fondo_musical_arena.png);
+main{
+    background-color:#d5ddef    ;/* #a9adc1 *//* #DCDFEE*/
 }
 .bodyDiscografia{
     background-image: url(../img/fondo_musical_dark.png);
 }
-html{
-	font-size: 62.5%; /* 1rem= 10px */
-    font-family: 'Bebas Neue', cursive;
+footer{
+    background-color: #34113b    ;
 }
-main{
-    font-family: 'Roboto', sans-serif;
-}
-/* Header */
-header{
-    width: 100%;
-    background-color: rgba(62, 12, 85, 0.904);
-    display: flex;
-    justify-content: space-around ;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-a{
-    font-family: 'Bebas Neue', cursive;
-}
-
-    nav ul {
-        list-style: none;
-        display: inline;
-    }   
-        nav ul li {
-            display: inline;
-            position:relative;
-        }
-        nav ul li a {
-            text-decoration: none;
-            font-size: 5vw;
-            margin: 1rem;
-            box-sizing: content-box;
-            color: rgb(209, 181, 228);
-        }
-
-        ul ul {
-            position: absolute;
-            display: none;
-         }
-   
-         ul ul li {
-             display: block;
-            }
-   
-         ul li:hover ul {
-               display:block;
-               background-color: rgba(37, 13, 48, 0.904);  
-            }
-.ContenedorLogo{
-    width: 40%;
-}
-.ImagenLogo{
-    width: 100%;
+/* main{
+    background-color:#C9B6E7;
+} */
+/*Nav-principal */
+#logo{
+    width: 20vw;
     height: auto;
 }
-.ContenedorMenuBento{
-    align-self: center;
-}
-.menuBento{
-    text-decoration: none;
-    font-size: 5vw;
-    align-self: center;
-    color: rgb(209, 181, 228);
-}
-.menu_hamburguesa{
-    order: 1; /*Se ubico el menu debajo del logo*/
-}
-/* Fin de header */
+.text-bebas{
+    font-family: 'Bebas Neue', cursive;
 
-
-/* Seccion inicio */
+}
+.nav-text{
+    font-size: 2rem;
+}
+.bg-violet-nav{/* #2e0e36  *//* #4a2b55 *//* #202136 */
+    background-color: #917898    ;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;;
+}
+.bg-violet-nav-ul{
+    background-color:#57324c; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+#bg-violet-nav-li{/* rgba(62, 12, 85, 0.904) */
+    background-color:#8f3c8c;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+}
+/*index -  */
+.lh-p{
+    line-height: 1.5;
+    background-color: #aab2c4;
+}
+.ArticuloOverlay{
+    width: 100vw;
+}
 .TituloPrincipal{
-    font-size: 3rem;
+    padding: 2rem;
     text-align: center;
-    margin: 0;
-    padding-top: 2rem;
 }
-
-.Inicio{
-    padding: 0;
+/*index - Contacto */
+.ContenedorBts{
+    display: flex;
+    justify-content: space-evenly;
 }
-.InicioImagen{
-    width: 100%;
+#bt1 ,
+#bt2,
+#bt3{
+    background-color:rgb(77, 11, 77)  ;
+    color: grey;
 }
-/* Fin de seccion inicio */
+#bt1:hover,
+#bt2:hover,
+#bt3:hover{
+    background-color:#3d1555d0 ;
+    color: whitesmoke;
+}
 
 /* boton de to top */
 .BtInicio{
     display: inline;
     position: sticky;
     top: 50%;
-    margin: 1rem 0 0 1rem;
+    margin: 1vw 0 0 1vw;
 }
-.TextoSaludo{
-    font-size: 1rem;
-}
-
-/* Seccion informacion */
-p{
-    line-height: 1.5;
-}
-
-.SeccionInformacionTitulo , 
-.UltimoMvTitulo , 
-.TituloArticulo{
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-    .Container{
-        display: flex;
-        justify-content: center;
-    }
-        .ContainerImg {
-        width: 60vw;
-        height: auto;
-        }
-        
-        .ImgOverlay {
-            display: none;
-        }
-
-.InformacionTexto , 
-.seccion_parrafo,
-p,
-strong{
-    font-size: 1.5rem;
-    padding: 2rem 0 ;
-}
-
-.Articulo ,
-.ArticuloOverlay{
-    padding: 4% 8%;
-}
-
-.ContenedorBts{
+/*index - Infobts */
+.Container{
     display: flex;
-    justify-content: space-evenly;
-}
-    .bt{
-        text-decoration: none;
-        font-size: 1.5rem;
-        border: solid 0.1rem black;
-        padding: 1rem;
-    }
-/* Fin de seccion informacion */
-
-/* Seccion mv */
-#Mv{ /* Aplicacion de Grid y flex en los div */
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "UltimoMv" 
-    "UltimaColab"
-    "SolitarioMv";
-}
-
-#ContenedorUltimoMv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-bottom:5% ;
-    grid-area: UltimoMv;
 }
-    .UltimoMv,
-    .UltimaColab,
-    .SolitarioMv{
-        width: 360px; /* 600x337 */
-        height: 202px;
+    .ContainerImg {
+    width: 60vw;
+    height: auto;
     }
-#ContenedorUltimaColab{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom:5% ;
-    grid-area: UltimaColab;
+    
+    .ImgOverlay {
+        display: none;
+    }
+/* index - mv */
+.UltimoMv,
+.UltimaColab,
+.SolitarioMv{
+    width: 360px; /* 600x337 */
+    height: 202px;
 }
-#ContenedorSolitarioMv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom:5% ;
-    grid-area: SolitarioMv;
-}
-    .TituloUltimaColab,
-    .TituloSolitarioMv{
-        font-size: 2rem;
-    }
-
-/* Fin de seccion mv */
-
-/* contacto */
-.ContenedorContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4% 8%;;
-}
-    .TextoContacto{
-        font-size:1.5rem;
-        padding-bottom: 1rem;
-    }
-    .ContenedorBt{
-        display: flex;
-        justify-content: center;
-    }
 /* Footer */
 .footer{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.904);
     padding: 0 3%;
 }
-
 .footer a{
  padding: 0 1rem;
 }
 
 .footer__span{
     color: white;
-    font-size: 2rem;
-
 }
-
-/* Fin de footer */
-
-/* Seccion about bts */
-.imagenSeccion{
-    width: 40vw;
-    float:left;
-    padding: 2%;
+.footer a:hover img {
+    transform-origin: center center;
+    animation: scale 0.12s ease-in-out forwards;
+  }
+  @keyframes scale {
+    to {
+      transform: scale(1.1);
+    }
 }
-
-.indice_info li a{
-    margin: 0;
-    color: #e8e3eb;
-    box-sizing: content-box;
-    font-size: 2.5rem;
-}
-.indice_info li{
-    background-color: rgba(90, 12, 105, 0.678);
-    padding: 0 1rem ;
-    text-align: center;
-}
-#inicio_about_bts{
-    margin: 5% 0;
-}
-    #inicio_about_bts ul{
-        padding: 3% 10%;
-        padding-bottom: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: repeat(8 ,auto);
-        grid-template-areas: 
-        "intro prog"
-        "bh btsarmy"
-        "albun colab"
-        "mix single";
-        grid-column-gap: 2vw;
-        grid-row-gap: 1vh;
-        align-items: center;
-    }
-    #inicio_about_bts ul li{
-        padding: 0.5vw;
-    }
-    #intro{
-        grid-area: intro;
-    }
-    #albun{
-        grid-area: albun;
-    }
-    #prog{
-        grid-area: prog;
-    }
-    #colab{
-        grid-area: colab;
-    }
-    #bh{
-        grid-area: bh;
-    }
-    #mix{
-        grid-area: mix;
-    }
-    #btsarmy{
-        grid-area: btsarmy;
-    }
-    #single{
-        grid-area: single;
-    }
-/* Fin de Seccion about bts */
-
-/* seccion de contacto */
-
-fieldset{
-    border: 0 ;
-    margin: 1rem 10%;
-    padding: 2rem;
-    font-size: 2rem;
-}
-
-fieldset legend {
-    text-align: center;
-    font-size: 3;
-    text-decoration: underline;
-}
- fieldset label{
-     margin: 1rem 0 1rem 2rem;
- }
-
-.Contactoparrafo{
-    font-size: 2rem;
-    padding: 1rem 10%; 
-}
-
-.mensaje{
+/* Inicio de media lg(bs)*/
+@media (min-width: 992px){
+    .ArticuloOverlay{
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    border: 0 ;
-    font-size: 2rem;
-    margin: 1rem 10%;
-    padding: 0;
-
-}
-.mensaje__titulo{
-    text-align: center;
-    margin-bottom: 1rem;
- }
- .BotonEnviar ,
- .BotonCancelar{
-    padding: 0.5rem;
-    font-size: 2rem;
-    border-radius: 3px;
-    margin: 0 6%;
- }
-.contactoBt{
-    margin: 3rem;
-    text-align: center;
-}
-/* Fin de seccion de contacto */
-/* seccion shows */
-.imagenSeccionGrande{
-    float: left;
-    width: 20rem;
-    height: auto;
-    padding: 2rem;
-}
-/* Fin de seccion de shows */
-
-/* seccion proyectos */
-
-/* Fin de seccion proyectos */
-/* seccion discografia */
-.fila_albun{
-    display: flex;  
-    flex-direction: row; 
-   justify-content: space-around;
-   margin: 3rem 5rem;
-}
-
-.fila_albun a img ,
-.ContenedorCancines a img{
-    box-shadow: 0px 10px 10px black;
-    margin-bottom: 3rem;
-}
-
-.GifMenu{
-    display: flex;
     justify-content: center;
-}
-
-.gif{
-    width: 80%;
-    padding: 5rem;
-}
-
-.ContenedorComboBox .indiceDiscografia{
-    box-sizing: content-box;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(156, 153, 153, 0.5);
-}
-
-.ImgBoton{
-    width: 40px;
-    height: auto;
-}
-
-.ContenedorPlayBoton{
-    position: absolute;
-    right: 11%;
-    top:21%;
-}
-
-.ContenedorComboBox{
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    top:80%;
-}
-
-.ContenedorComboBox 
-.indiceDiscografia a{
-    color: white;
-    padding: 0.5rem;
-} 
-
-.sugaMixtapeTitulo , 
-.RMMixtapeTitulo ,
-.JhopeMixtapeTitulo{    
-    color: black  ;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    box-sizing: content-box;
-}  
-
-.tituloCover{
-    color: black  ;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
-    margin-left: 8%;
-    font-size: 2rem;
-    box-sizing: content-box;
-}
-
-.sugaMixtape , 
-.RMMixtape ,
-.JhopeMixtape{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    
-}
-
-figure figcaption{
-    font-size: 2rem;
-    text-align: center;
-}
-/* Fin de seccion discografia */
-@media (min-width: 760px){
-    nav ul li a {
-        font-size: 3rem;
-        margin: 2rem;
     }
-    .menuBento{
-        font-size: 3rem;
+    .Imagenarticulo{
+        width: 70vw;
     }
-}
-@media (min-width: 960px)
-{
-    header{
-        justify-content: space-around ;
-        align-items: center;
-    }
-    
-    .ContenedorLogo{
-        width: 25%
-    }
-    .ImagenLogo{
-        width: 90%;
-        height: auto;
-    }
-    
-    .menu_hamburguesa{
-        order: 0;
-    }
-    /* Fin de header */
-    
-    /* Seccion inicio */
-    .TituloPrincipal{
-        font-size: 4rem;
-    }
-    
-    .Inicio{
-        padding: 3%;
-    }
-    /* Fin de seccion inicio */
-    
-    /* boton de to top */
-    .BtInicio{
-        margin: 2rem 0 0 2rem;
-    }
-    .TextoSaludo{
-        font-size: 2rem;
-    }
-    .imgToTop{
-        width: 2.5vw;
-    }
-    /* Seccion informacion */
-    
-    .SeccionInformacionTitulo , 
-    .UltimoMvTitulo , 
-    .TituloArticulo{
-        font-size: 3rem;
-    }
-    
     .Container {
         position: relative;
         margin: 0 25%;
@@ -547,139 +163,15 @@ figure figcaption{
         .ImgOverlay {
         opacity: 1;
         }
-    
-    .InformacionTexto , 
-    .seccion_parrafo,
-    p,
-    strong{
-        font-size: 2rem;
-        padding: 2rem;
+    /* index- mv */
+    .UltimoMv{
+        width: 600px; /* 600x337 */
+        height: 337px;
     }
-
-    .bt{
-        font-size: 2rem;
+    .UltimaColab,
+    .SolitarioMv{
+        width: 420px; /* 600x337 */
+        height: 236px;
     }
-    /* Fin de seccion informacion */
-    
-    /* Seccion mv */
-    #Mv{ /* Aplicacion de Grid y flex en los div */
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "UltimoMv UltimoMv" 
-        "UltimaColab SolitarioMv";
-    }
-
-    #ContenedorUltimoMv{
-        padding-bottom:3% ;
-    }
-        .UltimoMv{
-            width: 600px; /* 600x337 */
-            height: 337px;
-        }
-        .UltimaColab,
-        .SolitarioMv{
-            width: 420px; /* 600x337 */
-            height: 236px;
-        }
-    #ContenedorUltimaColab{
-        padding-bottom:3% ;
-    }
-    #ContenedorSolitarioMv
-    {
-        padding-bottom:3% ;
-    }
-        .TituloUltimaColab,
-        .TituloSolitarioMv{
-            font-size: 2.5rem;
-        }
-    
-    /* Fin de seccion mv */
-    
-    /* contacto */
-    .ContenedorContacto{
-        border: solid 0.1rem black ;
-        margin: 3%;
-        padding: 2rem;
-    }
-        .TextoContacto{
-            font-size:2rem;
-            padding-bottom: 2rem;
-        }
-    /* Footer */
-        .footer a:hover img {
-            transform-origin: center center;
-            animation: scale 0.12s ease-in-out forwards;
-          }
-          @keyframes scale {
-            to {
-              transform: scale(1.1);
-            }
-          }
-    /* efecto de links */
-    #inicio_about_bts li{
-        /*Subrayado animado*/
-        background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 100%;
-        transition: background-size .5s;
-    }
-    #inicio_about_bts li:hover{
-        /*Subrayado animado*/
-			background-size: 100% 100%;
-        
-    }
-    a:link {
-        color: rgb(124, 80, 106);
-    }
-    
-    a:visited {
-        /* color: rgb(146, 84, 187); */
-        color: rgb(209, 181, 228);
-    }
-    a:hover ,
-    .indiceDiscografia ul li a:hover ,
-    .indiceColumna li a:hover,{
-        /* color: rgb(171, 139, 185); */
-        /* color: rgb(177, 9, 177);
-        border-color: rgb(160, 125, 175); */
-        
-    }
-    
-    a:active {
-        color: black;
-    }
-    
-    .bt {
-        background-color: rgb(77, 11, 77);
-        
-    } 
-    .bt:hover{
-        background-color: rgba(90, 12, 105, 0.678);
-    
-    }
-    /* fin de efecto de links */
-    
-    /* Seccion about bts */
-    .imagenSeccion{
-        width: 20vw;
-    }
-    #inicio_about_bts{
-        margin: 4% 0 1% 0 ;
-    }
-    #inicio_about_bts ul{
-        padding: 0 14% ;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "intro prog bh btsarmy"
-        "albun colab mix single";
-        grid-column-gap: 5vh;
-        grid-row-gap: 5vh;
-    }
-    #inicio_about_bts ul li{
-        padding: 1vw;
-    }
-    /* Fin de Seccion about bts */
 }
+
