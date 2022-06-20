@@ -67,7 +67,8 @@ footer{
     display: flex;
     justify-content: center;
 }
-.bt{
+.ContenedorBt .bt,
+.ContenedorBts .bt{
     padding: 0.5rem;
     text-decoration: none;
     background-color:rgb(77, 11, 77)  ;
@@ -77,9 +78,8 @@ footer{
     background-color:#3d1555d0 ;
     color: whitesmoke;
 }
-#bt1:hover,
-#bt2:hover,
-#bt3:hover{
+.ContenedorBt .bt:hover,
+.ContenedorBts .bt{
     background-color:#3d1555d0 ;
     color: whitesmoke;
 }
