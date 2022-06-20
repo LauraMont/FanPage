@@ -152,6 +152,47 @@ footer{
   .make-it-slow:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555);
   }
+/* sub menu */
+/* About_bts -sub menu */
+#inicio_about_bts li{
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    list-style: none;
+    background-color: rgba(37, 13, 48, 0.904); 
+    /*Subrayado animado*/
+    background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s;
+}
+#inicio_about_bts li a{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    box-sizing: content-box;
+    color:black;
+}
+
+.ContenedorPlayBoton{
+    position: absolute;
+    right: 6vw;
+    top:25vh;
+}
+
+.ContenedorComboBox{
+    width: 92vw;
+    position: absolute;
+    left: 2vw;
+    top:113vh;
+}
+
+.ContenedorComboBox 
+.indiceDiscografia a{
+    color: white;
+    padding: 0.5rem;
+}
 
 @media (min-width: 992px){
     .ArticuloOverlay{
@@ -205,30 +246,10 @@ footer{
         width: 420px; /* 600x337 */
         height: 236px;
     }
-    /* About_bts -sub menu */
-    #inicio_about_bts li{
-        text-align: center;
-        box-sizing: border-box;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        list-style: none;
-        background-color: rgba(37, 13, 48, 0.904); 
-        /*Subrayado animado*/
-        background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 100%;
-        transition: background-size .5s;
-    }
+    
     #inicio_about_bts li:hover{
         /*Subrayado animado*/
 			background-size: 100% 100%;
     }
-    #inicio_about_bts li a{
-        font-family: 'Bebas Neue', cursive;
-        text-decoration: none;
-        box-sizing: content-box;
-        color:black;
-}
 }
 
