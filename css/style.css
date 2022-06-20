@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
 main{
-    background-color:#d5ddef    ;/* #a9adc1 *//* #DCDFEE*/
+     background-image: url(../img/fondo_musical_arena.png);/* #a9adc1 *//* #DCDFEE*/
 }
 .bodyDiscografia{
     background-image: url(../img/fondo_musical_dark.png);
@@ -25,7 +25,7 @@ footer{
     font-size: 2rem;
 }
 .bg-violet-nav{/* #2e0e36  *//* #4a2b55 *//* #202136 */
-    background-color: #917898    ;
+    background-color: rgba(62, 12, 85, 0.904);
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;;
 }
@@ -35,14 +35,14 @@ footer{
     font-size: 2rem;
 }
 #bg-violet-nav-li{/* rgba(62, 12, 85, 0.904) */
-    background-color:#8f3c8c;
+    background-color: rgba(62, 12, 85, 0.904);
     font-family: 'Bebas Neue', cursive;
     font-size: 1rem;
 }
 /*index -  */
 .lh-p{
     line-height: 1.5;
-    background-color: #aab2c4;
+    background-color: beige;
 }
 .ArticuloOverlay{
     width: 100vw;
@@ -56,11 +56,26 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
+
 #bt1 ,
 #bt2,
 #bt3{
     background-color:rgb(77, 11, 77)  ;
     color: grey;
+}
+.ContenedorBt{
+    display: flex;
+    justify-content: center;
+}
+.bt{
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color:rgb(77, 11, 77)  ;
+    color: grey;
+}
+.bt:hover{
+    background-color:#3d1555d0 ;
+    color: whitesmoke;
 }
 #bt1:hover,
 #bt2:hover,
@@ -68,7 +83,10 @@ footer{
     background-color:#3d1555d0 ;
     color: whitesmoke;
 }
-
+.CardHorizontal{
+    background-color: #d5ddef;
+    border: 0;
+}
 /* boton de to top */
 .BtInicio{
     display: inline;
@@ -173,5 +191,30 @@ footer{
         width: 420px; /* 600x337 */
         height: 236px;
     }
+    /* About_bts -sub menu */
+    #inicio_about_bts li{
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        list-style: none;
+        background-color: rgba(37, 13, 48, 0.904); 
+        /*Subrayado animado*/
+        background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition: background-size .5s;
+    }
+    #inicio_about_bts li:hover{
+        /*Subrayado animado*/
+			background-size: 100% 100%;
+    }
+    #inicio_about_bts li a{
+        font-family: 'Bebas Neue', cursive;
+        text-decoration: none;
+        box-sizing: content-box;
+        color:black;
+}
 }
 
