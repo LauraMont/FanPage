@@ -39,6 +39,12 @@ footer{
     font-family: 'Bebas Neue', cursive;
     font-size: 1rem;
 }
+#bg-violet-nav-li a{
+    color: white;
+}
+#bg-violet-nav-li a:hover{
+    background-color: #34113b;
+}
 /*index -  */
 .lh-p{
     line-height: 1.5;
@@ -57,12 +63,6 @@ footer{
     justify-content: space-evenly;
 }
 
-#bt1 ,
-#bt2,
-#bt3{
-    background-color:rgb(77, 11, 77)  ;
-    color: grey;
-}
 .ContenedorBt{
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ footer{
     color: whitesmoke;
 }
 .ContenedorBt .bt:hover,
-.ContenedorBts .bt{
+.ContenedorBts .bt:hover{
     background-color:#3d1555d0 ;
     color: whitesmoke;
 }
@@ -155,7 +155,8 @@ footer{
 /* sub menu */
 /* About_bts -sub menu */
 #inicio_about_bts li{
-    
+    margin-right: 1rem;
+    width: 20vw;
     text-align: center;
     box-sizing: border-box;
     font-size: 1.5rem;
