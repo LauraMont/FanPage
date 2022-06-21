@@ -155,12 +155,13 @@ footer{
 /* sub menu */
 /* About_bts -sub menu */
 #inicio_about_bts li{
+    
     text-align: center;
     box-sizing: border-box;
     font-size: 1.5rem;
     padding: 0.5rem;
     list-style: none;
-    background-color: rgba(37, 13, 48, 0.904); 
+    background-color: rgba(113, 32, 151, 0.904); 
     /*Subrayado animado*/
     background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
     background-position: 0% 100%;
@@ -169,6 +170,7 @@ footer{
     transition: background-size .5s;
 }
 #inicio_about_bts li a{
+    width: 15vw;
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     box-sizing: content-box;
@@ -193,7 +195,52 @@ footer{
     color: white;
     padding: 0.5rem;
 }
+/* seccion de contacto */
 
+fieldset{
+    border: 0 ;
+    margin: 1rem 10%;
+    padding: 2rem;
+}
+
+fieldset legend {
+    text-align: center;
+    text-decoration: underline;
+}
+ fieldset label{
+     margin: 1rem 0 1rem 2rem;
+ }
+
+.Contactoparrafo{
+    font-size: 1rem;
+    padding: 1rem 10%; 
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    border: 0 ;
+    font-size: 1rem;
+    margin: 1rem 10%;
+    padding: 0;
+
+}
+.mensaje__titulo{
+    text-align: center;
+    margin-bottom: 1rem;
+ }
+ .BotonEnviar ,
+ .BotonCancelar{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin: 0 6%;
+ }
+.contactoBt{
+    margin: 3rem;
+    text-align: center;
+}
+/* Fin de seccion de contacto */
 @media (min-width: 992px){
     .ArticuloOverlay{
     width: 100vw;
