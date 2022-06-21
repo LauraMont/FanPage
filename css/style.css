@@ -48,7 +48,7 @@ footer{
 /*index -  */
 .lh-p{
     line-height: 1.5;
-    background-color: beige;
+    background-color: #ead8c8;
 }
 .ArticuloOverlay{
     width: 100vw;
@@ -93,6 +93,9 @@ footer{
     position: sticky;
     top: 50%;
     margin: 1vw 0 0 1vw;
+}
+.BtInicio a{
+    text-decoration: none;
 }
 /*index - Infobts */
 .Container{
@@ -255,7 +258,6 @@ fieldset legend {
 /* Fin de seccion de contacto */
 @media (min-width: 1024px){
     .ContenedorComboBox{
-        width: 90vw;
         position: absolute;
         left: 3vw;
         top:113vh;
