@@ -3,15 +3,13 @@
 main{
      background-image: url(../img/fondo_musical_arena.png);/* #a9adc1 *//* #DCDFEE*/
 }
-.bodyDiscografia{
+#MainDiscografia{
     background-image: url(../img/fondo_musical_dark.png);
 }
 footer{
     background-color: #34113b    ;
 }
-/* main{
-    background-color:#C9B6E7;
-} */
+
 /*Nav-principal */
 #logo{
     width: 20vw;
@@ -19,21 +17,14 @@ footer{
 }
 .text-bebas{
     font-family: 'Bebas Neue', cursive;
+}
 
-}
-.nav-text{
-    font-size: 2rem;
-}
 .bg-violet-nav{/* #2e0e36  *//* #4a2b55 *//* #202136 */
     background-color: rgba(62, 12, 85, 0.904);
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;;
 }
-.bg-violet-nav-ul{
-    background-color:#57324c; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-}
+
 #bg-violet-nav-li{/* rgba(62, 12, 85, 0.904) */
     background-color: rgba(62, 12, 85, 0.904);
     font-family: 'Bebas Neue', cursive;
@@ -42,7 +33,7 @@ footer{
 #bg-violet-nav-li a{
     color: white;
 }
-#bg-violet-nav-li a:hover{
+#bg-violet-nav-li a:hover{ /* pseudoclases */
     background-color: #34113b;
 }
 /*index -  */
@@ -74,7 +65,7 @@ footer{
     background-color:rgb(77, 11, 77)  ;
     color: grey;
 }
-.bt:hover{
+.bt:hover{ /* pseudoclases */
     background-color:#3d1555d0 ;
     color: whitesmoke;
 }
@@ -132,16 +123,15 @@ footer{
 .footer__span{
     color: white;
 }
-.footer a:hover img {
+.footer a:hover img { /* pseudoclases */
     transform-origin: center center;
     animation: scale 0.12s ease-in-out forwards;
   }
-  @keyframes scale {
+  @keyframes scale {    
     to {
       transform: scale(1.1);
     }
 }
-/* Inicio de media lg(bs)*/
 /* discografia - portadas */
 
 /* The slow way */
@@ -155,6 +145,7 @@ footer{
   .make-it-slow:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555);
   }
+
 #menu_discografia li{
     text-align: center;
     box-sizing: border-box;
@@ -162,14 +153,30 @@ footer{
     padding: 0.5rem;
     list-style: none;
     background-color: rgba(88, 80, 92, 0.904); 
-    /*Subrayado animado*/
-    background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size .5s;
+    width: 35vw;
+
 }
-/* sub menu */
+
+#inicio_about_bts li a,
+#menu_discografia li a{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    box-sizing: content-box;
+    color:black;
+}
+#menu_discografia li a:hover{
+    color: white;
+}
+.ContenedorPlayBoton{
+    position: absolute;
+    right: 15vw;
+    top:20vh;
+}
+
+.indiceDiscografia a{
+    color: white;
+    padding: 0.5rem;
+}
 /* About_bts -sub menu */
 #inicio_about_bts li{
     margin-right: 1rem;
@@ -187,28 +194,8 @@ footer{
     background-size: 0% 100%;
     transition: background-size .5s;
 }
-#inicio_about_bts li a,
-#menu_discografia li a{
+#inicio_about_bts li a{
     width: 15vw;
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-    box-sizing: content-box;
-    color:black;
-}
-#menu_discografia li a:hover{
-    color: white;
-}
-.ContenedorPlayBoton{
-    position: absolute;
-    right: 6vw;
-    top:25vh;
-}
-
-
-.ContenedorComboBox 
-.indiceDiscografia a{
-    color: white;
-    padding: 0.5rem;
 }
 /* seccion de contacto */
 
@@ -256,12 +243,30 @@ fieldset legend {
     text-align: center;
 }
 /* Fin de seccion de contacto */
+@media (min-width:576px){
+    .ContenedorPlayBoton{
+        right: 10vw;
+        top:20vh;
+    }
+    #menu_discografia li{
+        width: 30vw;
+    }
+}
 @media (min-width: 1024px){
+    /* discografia */
+    .ContenedorPlayBoton{
+        right: 6vw;
+        top:25vh;
+    }
     .ContenedorComboBox{
         position: absolute;
-        left: 3vw;
-        top:113vh;
+        width: 98vw;
+        top:100vh;
     }
+    #menu_discografia ul{
+        padding: 0;
+    }
+     /* articulo con animacion */
     .ArticuloOverlay{
     width: 100vw;
     display: flex;
@@ -299,7 +304,7 @@ fieldset legend {
         padding: 20px ;
         text-align: center;
         }
-        .Container:hover 
+        .Container:hover /* pseudoclases */
         .ImgOverlay {
         opacity: 1;
         }
@@ -314,7 +319,7 @@ fieldset legend {
         height: 236px;
     }
     
-    #inicio_about_bts li:hover{
+    #inicio_about_bts li:hover{  /* pseudoclases */
         /*Subrayado animado*/
 			background-size: 100% 100%;
     }
