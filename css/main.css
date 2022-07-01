@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap");
+.nav-li, #menu_discografia li, #inicio_about_bts li {
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  list-style: none; }
+
 main {
   background-image: url(../img/fondo_musical_arena.png); }
 
@@ -51,17 +58,17 @@ footer {
     background-color: #34113b; }
 
 #menu_discografia li {
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  list-style: none;
   background-color: rgba(88, 80, 92, 0.904);
   width: 35vw; }
   #menu_discografia li a:hover {
     color: white; }
 
-#inicio_about_bts li a,
+#inicio_about_bts li a {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  box-sizing: content-box;
+  color: black; }
+
 #menu_discografia li a {
   font-family: "Bebas Neue", cursive;
   text-decoration: none;
@@ -72,11 +79,6 @@ footer {
 #inicio_about_bts li {
   margin-right: 1rem;
   width: 20vw;
-  text-align: center;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  list-style: none;
   background-color: rgba(113, 32, 151, 0.904);
   /*Subrayado animado*/
   background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
@@ -146,7 +148,6 @@ footer {
 .UltimaColab,
 .SolitarioMv {
   width: 300px;
-  /* 600x337 */
   height: 168px; }
 
 /* boton de to top */
@@ -191,15 +192,12 @@ fieldset {
   padding: 1rem 10%; }
 
 .mensaje {
-  display: flex;
-  flex-direction: column;
   border: 0;
   font-size: 1rem;
   margin: 1rem 10%;
   padding: 0; }
 
 .mensaje__titulo {
-  text-align: center;
   margin-bottom: 1rem; }
 
 .BotonEnviar,
@@ -210,8 +208,7 @@ fieldset {
   margin: 0 6%; }
 
 .contactoBt {
-  margin: 3rem;
-  text-align: center; }
+  margin: 3rem; }
 
 .w-100vw {
   width: 100vw; }
@@ -282,12 +279,10 @@ fieldset {
   /* index- mv */
   .UltimoMv {
     width: 600px;
-    /* 600x337 */
     height: 337px; }
   .UltimaColab,
   .SolitarioMv {
     width: 420px;
-    /* 600x337 */
     height: 236px; }
   #inicio_about_bts li:hover {
     /* pseudoclases */

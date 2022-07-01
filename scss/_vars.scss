@@ -1,9 +1,12 @@
 //Img
 $bg-main : url(../img/fondo_musical_arena.png);
 $bg-main-discografia : url(../img/fondo_musical_dark.png);
-//Colors
-$bg-color-footer : #34113b;
-$bg-color-nav : rgba(62, 12, 85, 0.904);
-$bg-color-text: #ead8c8;
+//Colors- map
+//maps
+$bg-color: (
+    'footer': #34113b,
+    'nav':rgba(62, 12, 85, 0.904),
+    'text' : #ead8c8,
+);
 //Font
 $ft-bebas: 'Bebas Neue', cursive;
