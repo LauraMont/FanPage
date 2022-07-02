@@ -100,7 +100,7 @@ footer{
 #inicio_about_bts li{
     @extend .nav-li;
     margin-right: 1rem;
-    width: 20vw;
+    width: 50vw;
     background-color: rgba(113, 32, 151, 0.904); 
     /*Subrayado animado*/
     background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
@@ -111,6 +111,53 @@ footer{
     a{
         width: 15vw;
     }
+}
+#inicio_about_bts ul{
+    padding-top: 5rem;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: repeat(16 ,auto);
+    grid-template-areas: 
+    "intro"
+    " prog"
+    "bh "
+    "btsarmy"
+    "albun "
+    "colab"
+    "mix "
+    "single";
+    grid-row-gap: 5vh;
+    align-items: center;
+}
+#inicio_about_bts ul li{
+    font-size: 1.5rem;
+    padding: 0.5vw;
+    justify-self: center;
+}
+#intro{
+    grid-area: intro;
+}
+#albun{
+    grid-area: albun;
+}
+#prog{
+    grid-area: prog;
+}
+#colab{
+    grid-area: colab;
+}
+#bh{
+    grid-area: bh;
+}
+#mix{
+    grid-area: mix;
+}
+#btsarmy{
+    grid-area: btsarmy;
+}
+#single{
+    grid-area: single;
 }
 //Fin de navs
 
@@ -253,7 +300,27 @@ fieldset{
 .w-100vw{
     width: 100vw;
 }
+#link-discografia{
+    font-size: 5rem;
+}
 @media (min-width:576px){
+    #inicio_about_bts li{
+    width: 40vw;
+    }
+    #inicio_about_bts ul{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(8 ,auto);
+        grid-template-areas: 
+        "intro prog"
+        "bh btsarmy"
+        "albun colab"
+        "mix single";
+        grid-column-gap: 0;
+        grid-row-gap: 5vh;
+    }
+    #link-discografia{
+        font-size: 1rem;
+    }
     .make-it-slow {
         width: 30vw;
     }
@@ -272,11 +339,32 @@ fieldset{
     }
 }
 @media (min-width: 1024px){
+    #link-discografia{
+        font-size: 1rem;
+    }
     .make-it-slow {
         width: 20vw;
     }
     #logo{
         @include width-height(20vw, auto);
+    }
+    /*sub menu - aboutbts*/
+    #inicio_about_bts ul{
+        padding: 2rem 10rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "intro prog bh btsarmy"
+        "albun colab mix single";
+        justify-content: center;
+        grid-column-gap: 0;
+        grid-row-gap: 5vh;
+    }
+    #inicio_about_bts ul li{
+        font-size: 1.5rem;
+        width: 15vw;
+        padding: 1vw;
+        justify-self: center;
     }
     /* discografia */
     .ContenedorPlayBoton{
