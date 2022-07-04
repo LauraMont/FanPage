@@ -129,11 +129,24 @@ footer{
     "single";
     grid-row-gap: 5vh;
     align-items: center;
-}
-#inicio_about_bts ul li{
-    font-size: 1.5rem;
-    padding: 0.5vw;
-    justify-self: center;
+    li{
+        @extend .nav-li;
+        margin-right: 1rem;
+        width: 50vw;
+        background-color: rgba(113, 32, 151, 0.904); 
+        /*Subrayado animado*/
+        background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition: background-size .5s;
+        font-size: 1.5rem;
+        padding: 0.5vw;
+        justify-self: center;
+        a{
+            width: 15vw;
+        }
+    }
 }
 #intro{
     grid-area: intro;
@@ -255,6 +268,11 @@ footer{
     top:20vh;
 }
 //Fin Discografia
+//Comienzo about_bts
+.IntroduccionDeMiembros img {
+    @include width-height(100%, auto);
+}
+
 //Comienzo Contacto
 /* seccion de contacto */
 fieldset{
@@ -304,6 +322,7 @@ fieldset{
     font-size: 5rem;
 }
 @media (min-width:576px){
+
     #inicio_about_bts li{
     width: 40vw;
     }
@@ -365,6 +384,10 @@ fieldset{
         width: 15vw;
         padding: 1vw;
         justify-self: center;
+    }
+    .IntroduccionDeMiembros img ,
+    #flush-collapseThree img{
+        @include width-height(70%, auto);
     }
     /* discografia */
     .ContenedorPlayBoton{

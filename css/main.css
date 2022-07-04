@@ -215,6 +215,10 @@ footer {
   right: 15vw;
   top: 20vh; }
 
+.IntroduccionDeMiembros img {
+  width: 100%;
+  height: auto; }
+
 /* seccion de contacto */
 fieldset {
   border: 0;
@@ -301,6 +305,10 @@ fieldset {
     width: 15vw;
     padding: 1vw;
     justify-self: center; }
+  .IntroduccionDeMiembros img,
+  #flush-collapseThree img {
+    width: 70%;
+    height: auto; }
   /* discografia */
   .ContenedorPlayBoton {
     right: 6vw;
