@@ -97,21 +97,6 @@ footer{
     }
 }
 /* About_bts -sub menu */
-#inicio_about_bts li{
-    @extend .nav-li;
-    margin-right: 1rem;
-    width: 50vw;
-    background-color: rgba(113, 32, 151, 0.904); 
-    /*Subrayado animado*/
-    background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size .5s;
-    a{
-        width: 15vw;
-    }
-}
 #inicio_about_bts ul{
     padding-top: 5rem;
     padding-bottom: 0;
