@@ -27,7 +27,8 @@ main {
     background-color: #7a718e; }
   #MainDiscografia .t_disc,
   .main_contact .t_disc {
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    background-color: #7a718e00; }
 
 footer {
   background-color: #34113b;
@@ -146,7 +147,7 @@ footer {
   grid-area: single; }
 
 /*index -  */
-.lh-p, .bg_form h2, .bg_form h3, .bg_form figcaption, .bg_form p, main h1, main h2, main h3 {
+.lh-p, .bg_form h2, .bg_form h3, .bg_form figcaption, .bg_form p, main h2, main h3 {
   background-color: #ead8c8; }
 
 .ArticuloOverlay {
