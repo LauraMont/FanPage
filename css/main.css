@@ -261,12 +261,17 @@ fieldset {
 .mensaje__titulo {
   margin-bottom: 1rem; }
 
-.BotonEnviar,
-.BotonCancelar {
+#BotonEnviar,
+#BotonCancelar {
   padding: 0.5rem;
   font-size: 1rem;
-  border-radius: 3px;
-  margin: 0 6%; }
+  border-radius: 10px;
+  margin: 0 6%;
+  background-color: rgba(62, 12, 85, 0.904);
+  color: #d5ddef; }
+  #BotonEnviar:hover,
+  #BotonCancelar:hover {
+    background-color: rgba(106, 61, 128, 0.904); }
 
 .contactoBt {
   padding: 1rem; }
