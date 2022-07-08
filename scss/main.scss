@@ -17,12 +17,34 @@
 
 
 //Comienzo de main
+.bg_form{
+    background-image: $bg-main;
+    width: 100%;
+    border-radius: 10px;
+    h2 , h3 ,figcaption ,p{
+        @extend .lh-p;
+    }
+    input , textarea{
+        border-radius: 10px;
+    }
+}
 main{
     background-image: $bg-main;
+    h1,h2,h3{
+    @extend .lh-p;
+    }
 }
-#MainDiscografia{
+#MainDiscografia,
+.main_contact{
     background-image: $bg-main-discografia;
+    h2 , h3 ,figcaption ,p{
+        background-color: #7a718e;
+    }
+    .t_disc{
+        padding-top: 2rem;
+    }
 }
+
 //Fin de main
 //Comienzo de footer
 footer{
@@ -40,6 +62,11 @@ footer{
         &:hover{ /* pseudoclases */
             transform-origin: center center;
             animation: scale 0.12s ease-in-out forwards;
+        }
+    }
+    @media(max-width : 576px) {
+        .footer__span{
+            display: block;
         }
     }
 }
@@ -79,7 +106,7 @@ footer{
 #menu_discografia li{
     @extend .nav-li;
     background-color: rgba(88, 80, 92, 0.904); 
-    width: 35vw;
+    width: 50vw;
     a{
         &:hover{
             color: white;
@@ -117,7 +144,7 @@ footer{
     li{
         @extend .nav-li;
         margin-right: 1rem;
-        width: 50vw;
+        width: 40vw;
         background-color: rgba(113, 32, 151, 0.904); 
         /*Subrayado animado*/
         background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
@@ -162,9 +189,10 @@ footer{
 //Comienzo de index
 /*index -  */
 .lh-p{
-    line-height: 1.5;
     background-color: map-get($map:$bg-color, $key:'text');
 }
+
+
 .ArticuloOverlay{
     width: 100vw;
 }
@@ -208,7 +236,7 @@ footer{
     justify-content: center;
 }
     .ContainerImg {
-    @include width-height(60vw, auto);
+    @include width-height(70vw, auto);
     }
     
     .ImgOverlay {
@@ -235,10 +263,12 @@ footer{
 
 //Comienzo Discografia
 /* discografia - portadas */
-
+.w-gif{ 
+    width: 100%;
+}
 /* The slow way */
 .make-it-slow {
-    width: 40vw;
+    width: 60vw;
     border: 1px rgb(173, 173, 173) solid;
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;
@@ -248,14 +278,13 @@ footer{
     }
 }
 .ContenedorPlayBoton{
-    position: absolute;
-    right: 15vw;
-    top:20vh;
+    display: none
 }
 //Fin Discografia
 //Comienzo about_bts
-.IntroduccionDeMiembros img {
-    @include width-height(100%, auto);
+.IntroduccionDeMiembros img ,
+.card div img{
+    @include width-height(60%, auto);
 }
 
 //Comienzo Contacto
@@ -296,18 +325,21 @@ fieldset{
     margin: 0 6%;
 }
 .contactoBt{
-    padding: 3rem;
+    padding: 1rem;
 }
 //Fin Contacto
 
 .w-100vw{
-    width: 100vw;
+    width: 100%;
 }
 #link-discografia{
     font-size: 5rem;
 }
 @media (min-width:576px){
-
+    .IntroduccionDeMiembros img,
+    .card div img {
+        @include width-height(50%, auto);
+    }
     #inicio_about_bts li{
     width: 40vw;
     }
@@ -326,7 +358,7 @@ fieldset{
         font-size: 1rem;
     }
     .make-it-slow {
-        width: 30vw;
+        width: 35vw;
     }
     .footer a{
         padding: 0 1rem;
@@ -335,14 +367,34 @@ fieldset{
         @include width-height(30vw, auto);
     }
     .ContenedorPlayBoton{
-        right: 10vw;
-        top:20vh;
+        display: inline;
+        position: absolute;
+        right: 5vw;
+        top:80vh;
     }
     #menu_discografia li{
         width: 30vw;
     }
+    /* index- mv */
+    .UltimoMv,
+    .UltimaColab,
+    .SolitarioMv{
+        @include width-height(420px, 236px);
+    }
 }
-@media (min-width: 1024px){
+@media(min-width: 768px){
+    .bg_form{
+        width: 80%;
+    }
+    .card div img{
+        @include width-height(80%, auto);
+    }
+    .IntroduccionDeMiembros img{
+        @include width-height(100%, auto);
+    }
+}
+@media (min-width: 992px){
+
     #link-discografia{
         font-size: 1rem;
     }
@@ -376,13 +428,14 @@ fieldset{
     }
     /* discografia */
     .ContenedorPlayBoton{
-        right: 6vw;
-        top:25vh;
+        right: 8vw;
+        top:38vh;
     }
     .ContenedorComboBox{
         position: absolute;
-        width: 98vw;
+        width: 96.5vw;
         top:100vh;
+        left: 1vw;
     }
     #menu_discografia ul{
         padding: 0;
@@ -423,17 +476,19 @@ fieldset{
         opacity: 1;
         }
     }
-    /* index- mv */
     .UltimoMv{
         @include width-height(600px, 337px);
-    }
-    .UltimaColab,
-    .SolitarioMv{
-        @include width-height(420px, 236px);
     }
     
     #inicio_about_bts li:hover{  /* pseudoclases */
         /*Subrayado animado*/
 			background-size: 100% 100%;
+    }
+    .w-gif{
+        width: 90%;
+    }
+    /* form */
+    .bg_form{
+        width: 70%;
     }
 }

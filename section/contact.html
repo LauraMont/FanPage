@@ -21,84 +21,92 @@
     <header>
         <!-- Comienza nav -->
         <nav class="navbar navbar-expand-lg navbar-light bg-violet-nav ">
-          <div class="container ">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <a  class="nav-link active"  href="../index.html">
-                  <img src="../img/hanabell.png" id="logo" alt="" width="30" height="24" class="d-inline-block align-text-top">
-              </a>
-              <div class=" collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-                  <ul class=" navbar-nav d-flex justify-content-evenly">
-                      <li class="nav-item dropdown  ">
-                          <a class="nav-link dropdown-toggle text-light" href="about_bts.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          BTS</a>
-                          <ul class="dropdown-menu " id="bg-violet-nav-li" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item "   href="about_bts.html">Informacion</a></li>
-                              <li><a class="dropdown-item" href="shows.html">Programas</a></li>
-                              <li><a class="dropdown-item" href="logros.html">Logros</a></li>
-                              <li><a class="dropdown-item" href="proyectos.html">Proyectos</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active text-light" aria-current="page" href="discografia.html">Discografía</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active text-light" aria-current="page" href="about_army.html">Army</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active text-light" aria-current="page" href="contact.html">Contacto</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-      </header>
-      <!-- Termina nav -->
-    </header>
-    <main >
-        <h2 class="text-center">Contacto</h2>
-        <p class="Contactoparrafo">
-            Si quieres notificarnos alguna informacion erronea , solicitar agregar algun contenido 
-            ,dejar una reseña sobre el sitio o quieres unirte a nuestro equipo este es el lugar indicado! 
-            Por favor llena el siguiente formulario y pronto lo leeremos ,gracias por contactarnos!
-        </p>
-        <form action="" method="post" id="contacto" class="form_contacto">
-            <fieldset class="px-5">
-                <legend> Informacion de contacto. </legend>
-                <p >De ser el caso nos contactaremos a traves de este mail</p>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Tú nombre/Apodo">
-                <br>
-                <label for="email">email</label>
-                <input type="email" name="email" id="email"
-                placeholder="mail@algo.com">
-            </fieldset>
-
-            <fieldset class="px-5">
-                <legend>Porque razon nos contactas?</legend>
-                <p>Nos interesa saberlo de antemano, pero no te preocupes no es obligatorio!</p>
-                <label for="Informacion_erronea">Informacion erronea</label>
-                <input type="checkbox" value="Informacion_erronea" id="Informacion_erronea">
-                <label for="Resena">Reseña</label>
-                <input type="checkbox" value="Resena" id="Resena">
-                <label for="Equipo">Quiero unirme al equipo!</label>
-                <input type="checkbox" value="Equipo" id="Equipo">
-                <label for="otro">Otro</label>
-                <textarea id="" cols="20" rows="1"></textarea>
-            </fieldset>
-            <section>
-                <div class="mensaje d-flex flex-column">
-                    <label for="mensaje" class="mensaje__titulo text-center">Mensaje</label>
-                    <textarea  cols="100" rows="10" placeholder="Puedes escribir tu mensaje aquí!"></textarea>
+            <div class="container ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a  class="nav-link active"  href="../index.html">
+                    <img src="../img/hanabell.png" id="logo" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <div class=" collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+                    <ul class=" navbar-nav d-flex justify-content-evenly">
+                        <li class="nav-item dropdown  ">
+                            <a class="nav-link dropdown-toggle text-light" href="about_bts.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            BTS</a>
+                            <ul class="dropdown-menu " id="bg-violet-nav-li" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item "   href="about_bts.html">Informacion</a></li>
+                                <li><a class="dropdown-item" href="shows.html">Programas</a></li>
+                                <li><a class="dropdown-item" href="logros.html">Logros</a></li>
+                                <li><a class="dropdown-item" href="proyectos.html">Proyectos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="about_army.html">Army</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            <section class="contactoBt text-center">
-                <input type="submit" value="enviar" class="BotonEnviar">
-                <input type="reset" value="cancelar" class="BotonCancelar">
-            </section>
-            
-        </form>
+            </div>
+        </nav>
+    </header>
+    <!-- Termina nav -->
+    </header>
+    <main class="main_contact">
+        <section class="d-flex justify-content-center p-5">
+            <div class="bg_form">
+                <h2 class="text-center">Contacto</h2>
+                <p class="Contactoparrafo">
+                    Si quieres notificarnos alguna informacion erronea , solicitar agregar algun contenido 
+                    ,dejar una reseña sobre el sitio o quieres unirte a nuestro equipo este es el lugar indicado! 
+                    Por favor llena el siguiente formulario y pronto lo leeremos ,gracias por contactarnos!
+                </p>
+                <form action="" method="post" id="contacto" class="form_contacto">
+                    <fieldset class="px-5">
+                        <legend> Informacion de contacto. </legend>
+                        <p >De ser el caso nos contactaremos a traves de este mail</p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tú nombre/Apodo">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email"
+                        placeholder="mail@algo.com">
+                    </fieldset>
+                    <fieldset class="px-5 row">
+                        <legend>Porque razon nos contactas?</legend>
+                        <p>Nos interesa saberlo de antemano, pero no te preocupes no es obligatorio!</p>
+                        <div class="col-lg-6">
+                            <label for="Informacion_erronea">Informacion erronea</label>
+                            <input type="checkbox" value="Informacion_erronea" id="Informacion_erronea">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="Resena">Reseña</label>
+                            <input type="checkbox" value="Resena" id="Resena">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="Equipo">Quiero unirme al equipo!</label>
+                            <input type="checkbox" value="Equipo" id="Equipo">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="otro">Otro</label>
+                            <textarea id="" cols="15" rows="1"></textarea>
+                        </div>
+                    </fieldset>
+                        <div class="mensaje d-flex flex-column">
+                            <label for="mensaje" class="mensaje__titulo text-center">Mensaje</label>
+                            <textarea  cols="80" rows="8" placeholder="Puedes escribir tu mensaje aquí!"></textarea>
+                        </div>
+                    <div class="contactoBt text-center">
+                        <input type="submit" value="enviar" class="BotonEnviar btn bt">
+                        <input type="reset" value="cancelar" class="BotonCancelar btn bt">
+                    </div>
+                </form>
+            </div>
+        </section>
+        
     </main>
     <footer class="footer">
         <span class="footer__span">Redes sociales de BTS:</span>

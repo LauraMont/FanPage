@@ -1,16 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap");
-.nav-li, #menu_discografia li, #inicio_about_bts li {
+.nav-li, #menu_discografia li, #inicio_about_bts ul li {
   text-align: center;
   box-sizing: border-box;
   font-size: 1.5rem;
   padding: 0.5rem;
   list-style: none; }
 
+.bg_form {
+  background-image: url(../img/fondo_musical_arena.png);
+  width: 100%;
+  border-radius: 10px; }
+  .bg_form input, .bg_form textarea {
+    border-radius: 10px; }
+
 main {
   background-image: url(../img/fondo_musical_arena.png); }
 
-#MainDiscografia {
+#MainDiscografia,
+.main_contact {
   background-image: url(../img/fondo_musical_dark.png); }
+  #MainDiscografia h2, #MainDiscografia h3, #MainDiscografia figcaption, #MainDiscografia p,
+  .main_contact h2,
+  .main_contact h3,
+  .main_contact figcaption,
+  .main_contact p {
+    background-color: #7a718e; }
+  #MainDiscografia .t_disc,
+  .main_contact .t_disc {
+    padding-top: 2rem; }
 
 footer {
   background-color: #34113b;
@@ -27,6 +44,9 @@ footer {
       /* pseudoclases */
       transform-origin: center center;
       animation: scale 0.12s ease-in-out forwards; }
+  @media (max-width: 576px) {
+    footer .footer__span {
+      display: block; } }
 
 @keyframes scale {
   to {
@@ -59,7 +79,7 @@ footer {
 
 #menu_discografia li {
   background-color: rgba(88, 80, 92, 0.904);
-  width: 35vw; }
+  width: 50vw; }
   #menu_discografia li a:hover {
     color: white; }
 
@@ -76,19 +96,6 @@ footer {
   color: black; }
 
 /* About_bts -sub menu */
-#inicio_about_bts li {
-  margin-right: 1rem;
-  width: 50vw;
-  background-color: rgba(113, 32, 151, 0.904);
-  /*Subrayado animado*/
-  background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: background-size .5s; }
-  #inicio_about_bts li a {
-    width: 15vw; }
-
 #inicio_about_bts ul {
   padding-top: 5rem;
   padding-bottom: 0;
@@ -98,11 +105,21 @@ footer {
   grid-template-areas: "intro" " prog" "bh " "btsarmy" "albun " "colab" "mix " "single";
   grid-row-gap: 5vh;
   align-items: center; }
-
-#inicio_about_bts ul li {
-  font-size: 1.5rem;
-  padding: 0.5vw;
-  justify-self: center; }
+  #inicio_about_bts ul li {
+    margin-right: 1rem;
+    width: 40vw;
+    background-color: rgba(113, 32, 151, 0.904);
+    /*Subrayado animado*/
+    background-image: linear-gradient(rgba(90, 12, 105, 0.678), rgba(90, 12, 105, 0.678));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s;
+    font-size: 1.5rem;
+    padding: 0.5vw;
+    justify-self: center; }
+    #inicio_about_bts ul li a {
+      width: 15vw; }
 
 #intro {
   grid-area: intro; }
@@ -129,8 +146,7 @@ footer {
   grid-area: single; }
 
 /*index -  */
-.lh-p {
-  line-height: 1.5;
+.lh-p, .bg_form h2, .bg_form h3, .bg_form figcaption, .bg_form p, main h1, main h2, main h3 {
   background-color: #ead8c8; }
 
 .ArticuloOverlay {
@@ -176,7 +192,7 @@ footer {
   justify-content: center; }
 
 .ContainerImg {
-  width: 60vw;
+  width: 70vw;
   height: auto; }
 
 .ImgOverlay {
@@ -200,9 +216,12 @@ footer {
   text-decoration: none; }
 
 /* discografia - portadas */
+.w-gif {
+  width: 100%; }
+
 /* The slow way */
 .make-it-slow {
-  width: 40vw;
+  width: 60vw;
   border: 1px #adadad solid;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease-in-out;
@@ -211,12 +230,11 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.555); }
 
 .ContenedorPlayBoton {
-  position: absolute;
-  right: 15vw;
-  top: 20vh; }
+  display: none; }
 
-.IntroduccionDeMiembros img {
-  width: 100%;
+.IntroduccionDeMiembros img,
+.card div img {
+  width: 60%;
   height: auto; }
 
 /* seccion de contacto */
@@ -251,15 +269,19 @@ fieldset {
   margin: 0 6%; }
 
 .contactoBt {
-  padding: 3rem; }
+  padding: 1rem; }
 
 .w-100vw {
-  width: 100vw; }
+  width: 100%; }
 
 #link-discografia {
   font-size: 5rem; }
 
 @media (min-width: 576px) {
+  .IntroduccionDeMiembros img,
+  .card div img {
+    width: 50%;
+    height: auto; }
   #inicio_about_bts li {
     width: 40vw; }
   #inicio_about_bts ul {
@@ -271,19 +293,37 @@ fieldset {
   #link-discografia {
     font-size: 1rem; }
   .make-it-slow {
-    width: 30vw; }
+    width: 35vw; }
   .footer a {
     padding: 0 1rem; }
   #logo {
     width: 30vw;
     height: auto; }
   .ContenedorPlayBoton {
-    right: 10vw;
-    top: 20vh; }
+    display: inline;
+    position: absolute;
+    right: 5vw;
+    top: 80vh; }
   #menu_discografia li {
-    width: 30vw; } }
+    width: 30vw; }
+  /* index- mv */
+  .UltimoMv,
+  .UltimaColab,
+  .SolitarioMv {
+    width: 420px;
+    height: 236px; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .bg_form {
+    width: 80%; }
+  .card div img {
+    width: 80%;
+    height: auto; }
+  .IntroduccionDeMiembros img {
+    width: 100%;
+    height: auto; } }
+
+@media (min-width: 992px) {
   #link-discografia {
     font-size: 1rem; }
   .make-it-slow {
@@ -311,12 +351,13 @@ fieldset {
     height: auto; }
   /* discografia */
   .ContenedorPlayBoton {
-    right: 6vw;
-    top: 25vh; }
+    right: 8vw;
+    top: 38vh; }
   .ContenedorComboBox {
     position: absolute;
-    width: 98vw;
-    top: 100vh; }
+    width: 96.5vw;
+    top: 100vh;
+    left: 1vw; }
   #menu_discografia ul {
     padding: 0; }
   /* articulo con animacion */
@@ -352,15 +393,15 @@ fieldset {
     .Container:hover .ImgOverlay {
       /* pseudoclases */
       opacity: 1; }
-  /* index- mv */
   .UltimoMv {
     width: 600px;
     height: 337px; }
-  .UltimaColab,
-  .SolitarioMv {
-    width: 420px;
-    height: 236px; }
   #inicio_about_bts li:hover {
     /* pseudoclases */
     /*Subrayado animado*/
-    background-size: 100% 100%; } }
+    background-size: 100% 100%; }
+  .w-gif {
+    width: 90%; }
+  /* form */
+  .bg_form {
+    width: 70%; } }
