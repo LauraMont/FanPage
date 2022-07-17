@@ -9,7 +9,7 @@
 .bg_form {
   background-image: url(../img/fondo_musical_arena.png);
   width: 100%;
-  border-radius: 10px; }
+  border-radius: 20px 20px 20px 20px; }
   .bg_form input, .bg_form textarea {
     border-radius: 10px; }
 
@@ -33,6 +33,7 @@ main {
 footer {
   background-color: #34113b;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.904);
@@ -40,14 +41,15 @@ footer {
   footer .footer__span {
     color: white; }
   footer a {
-    padding: 0 0.1rem; }
+    padding: 0 0.1rem;
+    text-decoration: none; }
     footer a:hover {
       /* pseudoclases */
       transform-origin: center center;
       animation: scale 0.12s ease-in-out forwards; }
   @media (max-width: 576px) {
-    footer .footer__span {
-      display: block; } }
+    footer {
+      flex-direction: column; } }
 
 @keyframes scale {
   to {
@@ -70,7 +72,8 @@ footer {
   /* rgba(62, 12, 85, 0.904) */
   background-color: rgba(62, 12, 85, 0.904);
   font-family: "Bebas Neue", cursive;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border: none; }
 
 #bg-violet-nav-li a {
   /* pseudoclases */
