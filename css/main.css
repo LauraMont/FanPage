@@ -246,8 +246,6 @@ fieldset {
   fieldset legend {
     text-align: center;
     text-decoration: underline; }
-  fieldset label {
-    margin: 1rem 0 1rem 2rem; }
 
 .Contactoparrafo {
   font-size: 1rem;
@@ -410,4 +408,8 @@ fieldset {
     width: 90%; }
   /* form */
   .bg_form {
-    width: 70%; } }
+    width: 70%; }
+  fieldset {
+    border: 0;
+    margin: 1rem 10%;
+    padding: 2rem; } }
